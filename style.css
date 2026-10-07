@@ -241,13 +241,13 @@ a {
   border-radius: 18px;
   padding: clamp(2rem, 5vw, 4rem);
 }
-.myo-banner {
+.byo-banner {
   overflow: hidden;
   border-radius: 18px;
   color: #fff;
   background: var(--green-dark);
 }
-.myo-banner .eyebrow {
+.byo-banner .eyebrow {
   color: var(--green);
 }
 .builder-card {
