@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en-PK">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Your cart — Forge</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container py-2">
+        <a class="navbar-brand" href="index.html"
+          ><span class="brand-mark">F</span>forge<span class="text-success"
+            >.</span
+          ></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav mx-auto gap-lg-3 align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link builder-nav" href="myo-pc.html"
+                ><span>Build Your PC</span
+                ><span class="builder-nav-tag">MYO-PC</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0">
+            <a class="btn btn-outline-dark btn-sm" href="login.html">Log in</a>
+            <a class="btn btn-dark btn-sm" href="cart.html">Cart</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="section-space">
+      <!-- Main content: cart items and a summary leading to checkout. -->
+      <div class="container">
+        <div class="eyebrow mb-2">YOUR BUILD IN PROGRESS</div>
+        <h1 class="page-heading mb-4">
+          Shopping cart <span class="muted fs-5">(2 products, 3 units)</span>
+        </h1>
+        <div class="row g-4">
+          <div class="col-lg-8">
+            <div class="content-card p-0">
+              <div class="table-responsive">
+                <table class="table align-middle mb-0">
+                  <thead class="small text-uppercase muted">
+                    <tr>
+                      <th scope="col" class="ps-4">Product</th>
+                      <th scope="col">Price</th>
+                      <th scope="col">Quantity</th>
+                      <th scope="col" class="text-end pe-4">Total</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="ps-4">
+                        <div class="d-flex align-items-center gap-3">
+                          <img
+                            src="https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=250&q=75"
+                            width="76"
+                            height="65"
+                            class="rounded-3 object-fit-cover"
+                            alt="GeForce RTX 4070"
+                          />
+                          <div>
+                            <a href="product-details.html" class="fw-bold"
+                              >GeForce RTX 4070 12GB</a
+                            >
+                            <div class="small muted">Graphics card</div>
+                            <a href="products.html" class="small text-danger"
+                              >Remove</a
+                            >
+                          </div>
+                        </div>
+                      </td>
+                      <td>Rs. 189,999</td>
+                      <td>
+                        <label class="visually-hidden" for="qty1"
+                          >Quantity for GeForce RTX 4070</label
+                        ><select
+                          class="form-select"
+                          id="qty1"
+                          aria-label="Quantity for GeForce RTX 4070"
+                          style="width: 76px"
+                        >
+                          <option selected>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                        </select>
+                      </td>
+                      <td class="text-end pe-4 fw-bold">Rs. 189,999</td>
+                    </tr>
+                    <tr>
+                      <td class="ps-4">
+                        <div class="d-flex align-items-center gap-3">
+                          <img
+                            src="https://images.unsplash.com/photo-1562976540-1502c2145186?auto=format&fit=crop&w=250&q=75"
+                            width="76"
+                            height="65"
+                            class="rounded-3 object-fit-cover"
+                            alt="Vengeance DDR5 memory"
+                          />
+                          <div>
+                            <a href="product-details.html" class="fw-bold"
+                              >Vengeance DDR5 32GB</a
+                            >
+                            <div class="small muted">Memory</div>
+                            <a href="products.html" class="small text-danger"
+                              >Remove</a
+                            >
+                          </div>
+                        </div>
+                      </td>
+                      <td>Rs. 34,999</td>
+                      <td>
+                        <label class="visually-hidden" for="qty2"
+                          >Quantity for Vengeance DDR5</label
+                        ><select
+                          class="form-select"
+                          id="qty2"
+                          aria-label="Quantity for Vengeance DDR5"
+                          style="width: 76px"
+                        >
+                          <option>1</option>
+                          <option selected>2</option>
+                          <option>3</option>
+                        </select>
+                      </td>
+                      <td class="text-end pe-4 fw-bold">Rs. 69,998</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <a href="products.html" class="btn btn-outline-dark mt-3"
+              >← Continue shopping</a
+            >
+          </div>
+          <div class="col-lg-4">
+            <div class="content-card">
+              <h2 class="h5 mb-4">Order summary</h2>
+              <div class="d-flex justify-content-between mb-3">
+                <span class="muted">Subtotal</span><span>Rs. 259,997</span>
+              </div>
+              <div class="d-flex justify-content-between mb-3">
+                <span class="muted">Shipping (demo estimate)</span
+                ><span>Rs. 1,500</span>
+              </div>
+              <div class="d-flex justify-content-between mb-3">
+                <span class="muted">Estimated tax (demo)</span
+                ><span>Rs. 20,800</span>
+              </div>
+              <hr />
+              <div
+                class="d-flex justify-content-between align-items-center mb-4"
+              >
+                <strong>Total</strong
+                ><strong class="order-total">Rs. 282,297</strong>
+              </div>
+              <a class="btn btn-dark w-100" href="checkout.html"
+                >Continue to checkout →</a
+              >
+              <p class="small text-center muted mt-3 mb-0">
+                Shipping and tax are illustrative demo estimates.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer mt-auto">
+      <div class="container py-5">
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <a class="navbar-brand text-white" href="index.html"
+              ><span class="brand-mark">F</span>forge.</a
+            >
+            <p class="small mt-3 mb-0">
+              PC components and custom-build guidance for your next setup.
+            </p>
+          </div>
+          <div class="col-6 col-md-6 col-lg-3">
+            <h2 class="h6 text-white">Shop</h2>
+            <ul class="list-unstyled d-grid gap-2 small">
+              <li><a href="products.html">All components</a></li>
+              <li><a href="products.html#categories">Browse categories</a></li>
+            </ul>
+            <h2 class="h6 text-white mt-4">Build PC</h2>
+            <ul class="list-unstyled d-grid gap-2 small">
+              <li><a href="myo-pc.html">Build Your PC (MYO-PC)</a></li>
+              <li>
+                <a href="myo-pc.html#compatibility-guide"
+                  >Compatibility guide</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-6 col-lg-3">
+            <h2 class="h6 text-white">Support</h2>
+            <ul class="list-unstyled d-grid gap-2 small">
+              <li><a href="contact.html">Get help</a></li>
+              <li><a href="contact.html">Compatibility questions</a></li>
+            </ul>
+            <h2 class="h6 text-white mt-4">Account</h2>
+            <ul class="list-unstyled d-grid gap-2 small">
+              <li><a href="login.html">Log in</a></li>
+              <li><a href="signup.html">Create account</a></li>
+              <li><a href="orders.html">My orders</a></li>
+              <li><a href="cart.html">Cart</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-6 col-lg-3">
+            <h2 class="h6 text-white">Contact</h2>
+            <ul class="list-unstyled d-grid gap-2 small">
+              <li><a href="contact.html">Pakistan contact details</a></li>
+              <li>
+                <a href="mailto:hello@example.pk"
+                  >hello@example.pk (placeholder)</a
+                >
+              </li>
+              <li>
+                <a href="tel:+923001234567">+92 300 123 4567 (placeholder)</a>
+              </li>
+            </ul>
+            <h2 class="h6 text-white mt-4">Social media</h2>
+            <ul class="list-unstyled d-flex flex-wrap gap-3 small">
+              <li>
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Instagram</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >YouTube</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Facebook</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="border-secondary my-4" />
+        <div class="d-flex justify-content-between flex-wrap gap-2 small">
+          <span>&copy; 2026 Forge Hardware. Static storefront demo.</span
+          ><span>Contact and price details are placeholders.</span>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

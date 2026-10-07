@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en-PK">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Checkout — Forge</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container py-2">
+        <a class="navbar-brand" href="index.html"
+          ><span class="brand-mark">F</span>forge<span class="text-success"
+            >.</span
+          ></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav mx-auto gap-lg-3 align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link builder-nav" href="myo-pc.html"
+                ><span>Build Your PC</span
+                ><span class="builder-nav-tag">MYO-PC</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0">
+            <a class="btn btn-outline-dark btn-sm" href="login.html">Log in</a>
+            <a class="btn btn-dark btn-sm" href="cart.html">Cart</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="section-space">
+      <!-- Main content: customer details, payment options, and order summary. -->
+      <div class="container">
+        <div class="mb-4">
+          <div class="eyebrow mb-2">CHECKOUT · PAKISTAN</div>
+          <h1 class="page-heading">Finish your build.</h1>
+          <div class="d-flex gap-3 mt-3">
+            <span class="checkout-step">01 Cart</span
+            ><span class="checkout-step current">02 Information & payment</span
+            ><span class="checkout-step">03 Confirmation</span>
+          </div>
+        </div>
+        <form>
+          <div class="row g-4">
+            <div class="col-lg-7">
+              <div class="content-card mb-4">
+                <div class="d-flex justify-content-between mb-4">
+                  <h2 class="h5 mb-0">Contact information</h2>
+                  <a class="small fw-bold" href="login.html">Log in</a>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label" for="email">Email address</label
+                  ><input
+                    class="form-control"
+                    type="email"
+                    id="email"
+                    name="email"
+                    autocomplete="email"
+                    placeholder="you@example.pk"
+                    required
+                  />
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="news"
+                    name="news"
+                  /><label class="form-check-label small" for="news"
+                    >Email me with news and offers</label
+                  >
+                </div>
+              </div>
+              <div class="content-card mb-4">
+                <h2 class="h5 mb-4">Shipping address</h2>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label" for="firstName">First name</label
+                    ><input
+                      class="form-control"
+                      id="firstName"
+                      name="firstName"
+                      autocomplete="given-name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label" for="lastName">Last name</label
+                    ><input
+                      class="form-control"
+                      id="lastName"
+                      name="lastName"
+                      autocomplete="family-name"
+                      required
+                    />
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label" for="address"
+                      >Street address</label
+                    ><input
+                      class="form-control"
+                      id="address"
+                      name="address"
+                      autocomplete="street-address"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label" for="city">City</label
+                    ><input
+                      class="form-control"
+                      id="city"
+                      name="city"
+                      autocomplete="address-level2"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label" for="region">State / region</label
+                    ><input
+                      class="form-control"
+                      id="region"
+                      name="region"
+                      autocomplete="address-level1"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label" for="zip">ZIP / postal code</label
+                    ><input
+                      class="form-control"
+                      id="zip"
+                      name="zip"
+                      autocomplete="postal-code"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label" for="country">Country</label
+                    ><select
+                      class="form-select"
+                      id="country"
+                      name="country"
+                      autocomplete="country-name"
+                      required
+                    >
+                      <option value="" disabled>Choose country</option>
+                      <option selected>Pakistan</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label" for="phone">Phone number</label
+                    ><input
+                      class="form-control"
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      autocomplete="tel"
+                      placeholder="+92 300 123 4567"
+                      required
+                    />
+                  </div>
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="billingSame"
+                        checked
+                      /><label class="form-check-label small" for="billingSame"
+                        >Billing address is the same as shipping</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="content-card">
+                <h2 class="h5 mb-1">Payment method</h2>
+                <p class="small muted mb-4">
+                  Demo payment options only. No payment will be processed.
+                </p>
+                <div class="border rounded-3 p-3 mb-3">
+                  <div class="d-flex justify-content-between">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        id="card"
+                        name="payment"
+                        checked
+                      /><label class="form-check-label fw-bold" for="card"
+                        >Credit or debit card</label
+                      >
+                    </div>
+                    <span class="small muted">Debit / credit card</span>
+                  </div>
+                  <div class="row g-3 mt-1">
+                    <div class="col-12">
+                      <label class="form-label" for="cardName"
+                        >Name on card</label
+                      ><input
+                        class="form-control"
+                        id="cardName"
+                        autocomplete="cc-name"
+                        placeholder="Full name"
+                        required
+                      />
+                    </div>
+                    <div class="col-12">
+                      <label class="form-label" for="cardNumber"
+                        >Card number</label
+                      ><input
+                        class="form-control"
+                        id="cardNumber"
+                        inputmode="numeric"
+                        autocomplete="cc-number"
+                        placeholder="1234 5678 9012 3456"
+                        required
+                      />
+                    </div>
+                    <div class="col-6">
+                      <label class="form-label" for="expiry"
+                        >Expiration date</label
+                      ><input
+                        class="form-control"
+                        id="expiry"
+                        autocomplete="cc-exp"
+                        placeholder="MM / YY"
+                        required
+                      />
+                    </div>
+                    <div class="col-6">
+                      <label class="form-label" for="cvv">Security code</label
+                      ><input
+                        class="form-control"
+                        id="cvv"
+                        inputmode="numeric"
+                        autocomplete="cc-csc"
+                        placeholder="CVV"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="border rounded-3 p-3 mb-3">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      id="bankTransfer"
+                      name="payment"
+                    /><label class="form-check-label fw-bold" for="bankTransfer"
+                      >Bank transfer</label
+                    >
+                  </div>
+                  <div class="small muted ms-4">Example payment option</div>
+                </div>
+                <div class="border rounded-3 p-3 mb-4">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      id="cashOnDelivery"
+                      name="payment"
+                    /><label
+                      class="form-check-label fw-bold"
+                      for="cashOnDelivery"
+                      >Cash on delivery</label
+                    >
+                  </div>
+                  <div class="small muted ms-4">Example payment option</div>
+                </div>
+                <div class="alert alert-warning small" role="note">
+                  Static checkout demo: do not enter real payment or personal
+                  information. No payment will be processed.
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="content-card">
+                <h2 class="h5 mb-4">Order summary</h2>
+                <div class="d-flex gap-3 align-items-center mb-3">
+                  <img
+                    src="https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=220&q=75"
+                    width="64"
+                    height="56"
+                    class="rounded-3 object-fit-cover"
+                    alt="GeForce RTX 4070"
+                  />
+                  <div class="flex-grow-1">
+                    <div class="fw-bold small">GeForce RTX 4070 12GB</div>
+                    <div class="small muted">Qty 1</div>
+                  </div>
+                  <span>Rs. 189,999</span>
+                </div>
+                <div class="d-flex gap-3 align-items-center mb-4">
+                  <img
+                    src="https://images.unsplash.com/photo-1562976540-1502c2145186?auto=format&fit=crop&w=220&q=75"
+                    width="64"
+                    height="56"
+                    class="rounded-3 object-fit-cover"
+                    alt="Vengeance DDR5 memory"
+                  />
+                  <div class="flex-grow-1">
+                    <div class="fw-bold small">Vengeance DDR5 32GB</div>
+                    <div class="small muted">Qty 2</div>
+                  </div>
+                  <span>Rs. 69,998</span>
+                </div>
+                <hr />
+                <div class="d-flex justify-content-between mb-2">
+                  <span class="muted">Subtotal</span><span>Rs. 259,997</span>
+                </div>
+                <div class="d-flex justify-content-between mb-2">
+                  <span class="muted">Shipping (demo estimate)</span
+                  ><span>Rs. 1,500</span>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                  <span class="muted">Estimated tax (demo)</span
+                  ><span>Rs. 20,800</span>
+                </div>
+                <hr />
+                <div
+                  class="d-flex justify-content-between align-items-center mb-4"
+                >
+                  <strong>Total (PKR)</strong
+                  ><strong class="order-total">Rs. 282,297</strong>
+                </div>
+                <button class="btn btn-dark w-100" type="button">
+                  Place demo order →
+                </button>
+                <p class="small muted text-center mt-3 mb-0">
+                  Demo estimates only. No order or payment will be processed.
+                </p>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer class="footer mt-auto">
+      <div class="container py-5">
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <a class="navbar-brand text-white" href="index.html"
+              ><span class="brand-mark">F</span>forge.</a
+            >
+            <p class="small mt-3 mb-0">
+              PC components and custom-build guidance for your next setup.
+            </p>
+          </div>
+          <div class="col-6 col-md-6 col-lg-3">
+            <h2 class="h6 text-white">Shop</h2>
+            <ul class="list-unstyled d-grid gap-2 small">
+              <li><a href="products.html">All components</a></li>
+              <li><a href="products.html#categories">Browse categories</a></li>
+            </ul>
+            <h2 class="h6 text-white mt-4">Build PC</h2>
+            <ul class="list-unstyled d-grid gap-2 small">
+              <li><a href="myo-pc.html">Build Your PC (MYO-PC)</a></li>
+              <li>
+                <a href="myo-pc.html#compatibility-guide"
+                  >Compatibility guide</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-6 col-lg-3">
+            <h2 class="h6 text-white">Support</h2>
+            <ul class="list-unstyled d-grid gap-2 small">
+              <li><a href="contact.html">Get help</a></li>
+              <li><a href="contact.html">Compatibility questions</a></li>
+            </ul>
+            <h2 class="h6 text-white mt-4">Account</h2>
+            <ul class="list-unstyled d-grid gap-2 small">
+              <li><a href="login.html">Log in</a></li>
+              <li><a href="signup.html">Create account</a></li>
+              <li><a href="orders.html">My orders</a></li>
+              <li><a href="cart.html">Cart</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-6 col-lg-3">
+            <h2 class="h6 text-white">Contact</h2>
+            <ul class="list-unstyled d-grid gap-2 small">
+              <li><a href="contact.html">Pakistan contact details</a></li>
+              <li>
+                <a href="mailto:hello@example.pk"
+                  >hello@example.pk (placeholder)</a
+                >
+              </li>
+              <li>
+                <a href="tel:+923001234567">+92 300 123 4567 (placeholder)</a>
+              </li>
+            </ul>
+            <h2 class="h6 text-white mt-4">Social media</h2>
+            <ul class="list-unstyled d-flex flex-wrap gap-3 small">
+              <li>
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Instagram</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >YouTube</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Facebook</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="border-secondary my-4" />
+        <div class="d-flex justify-content-between flex-wrap gap-2 small">
+          <span>&copy; 2026 Forge Hardware. Static storefront demo.</span
+          ><span>Contact and price details are placeholders.</span>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

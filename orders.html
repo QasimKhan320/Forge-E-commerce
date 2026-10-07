@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en-PK">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My orders — Forge</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container py-2">
+        <a class="navbar-brand" href="index.html"
+          ><span class="brand-mark">F</span>forge<span class="text-success"
+            >.</span
+          ></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav mx-auto gap-lg-3 align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link builder-nav" href="myo-pc.html"
+                ><span>Build Your PC</span
+                ><span class="builder-nav-tag">MYO-PC</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0">
+            <a class="btn btn-outline-dark btn-sm" href="login.html">Log in</a>
+            <a class="btn btn-dark btn-sm" href="cart.html">Cart</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="section-space">
+      <!-- Main content: sample order history for the storefront demo. -->
+      <div class="container">
+        <div
+          class="d-flex justify-content-between align-items-end flex-wrap gap-3 mb-4"
+        >
+          <div>
+            <div class="eyebrow mb-2">YOUR FORGE ACCOUNT</div>
+            <h1 class="page-heading mb-0">My orders.</h1>
+          </div>
+          <a class="btn btn-outline-dark" href="products.html"
+            >Shop components</a
+          >
+        </div>
+        <div class="alert alert-light border" role="note">
+          Sample order history for this static storefront. Order data is not
+          connected to an account.
+        </div>
+        <div class="content-card p-0">
+          <div class="table-responsive">
+            <table class="table align-middle mb-0">
+              <thead class="small text-uppercase muted">
+                <tr>
+                  <th class="ps-4">Order</th>
+                  <th>Date</th>
+                  <th>Items</th>
+                  <th>Status</th>
+                  <th class="text-end pe-4">Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="ps-4">
+                    <a class="fw-bold" href="order-details.html">#FG-261001</a>
+                  </td>
+                  <td>01 Oct 2026</td>
+                  <td>GeForce RTX 4070, Vengeance DDR5</td>
+                  <td><span class="badge text-bg-success">Delivered</span></td>
+                  <td class="text-end pe-4 fw-bold">Rs. 282,297</td>
+                </tr>
+                <tr>
+                  <td class="ps-4">
+                    <span class="fw-bold">#FG-260915</span>
+                  </td>
+                  <td>15 Sep 2026</td>
+                  <td>AMD Ryzen 7 7800X3D</td>
+                  <td>
+                    <span class="badge text-bg-secondary">Delivered</span>
+                  </td>
+                  <td class="text-end pe-4 fw-bold">Rs. 131,099</td>
+                </tr>
+                <tr>
+                  <td class="ps-4">
+                    <span class="fw-bold">#FG-260828</span>
+                  </td>
+                  <td>28 Aug 2026</td>
+                  <td>North Mid Tower Case</td>
+                  <td>
+                    <span class="badge text-bg-secondary">Delivered</span>
+                  </td>
+                  <td class="text-end pe-4 fw-bold">Rs. 55,499</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer mt-auto">
+      <div class="container py-5">
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <a class="navbar-brand text-white" href="index.html"
+              ><span class="brand-mark">F</span>forge.</a
+            >
+            <p class="small mt-3 mb-0">
+              PC components and custom-build guidance for your next setup.
+            </p>
+          </div>
+          <div class="col-6 col-md-6 col-lg-3">
+            <h2 class="h6 text-white">Shop</h2>
+            <ul class="list-unstyled d-grid gap-2 small">
+              <li><a href="products.html">All components</a></li>
+              <li><a href="products.html#categories">Browse categories</a></li>
+            </ul>
+            <h2 class="h6 text-white mt-4">Build PC</h2>
+            <ul class="list-unstyled d-grid gap-2 small">
+              <li><a href="myo-pc.html">Build Your PC (MYO-PC)</a></li>
+              <li>
+                <a href="myo-pc.html#compatibility-guide"
+                  >Compatibility guide</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-6 col-lg-3">
+            <h2 class="h6 text-white">Support</h2>
+            <ul class="list-unstyled d-grid gap-2 small">
+              <li><a href="contact.html">Get help</a></li>
+              <li><a href="contact.html">Compatibility questions</a></li>
+            </ul>
+            <h2 class="h6 text-white mt-4">Account</h2>
+            <ul class="list-unstyled d-grid gap-2 small">
+              <li><a href="login.html">Log in</a></li>
+              <li><a href="signup.html">Create account</a></li>
+              <li><a href="orders.html">My orders</a></li>
+              <li><a href="cart.html">Cart</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-6 col-lg-3">
+            <h2 class="h6 text-white">Contact</h2>
+            <ul class="list-unstyled d-grid gap-2 small">
+              <li><a href="contact.html">Pakistan contact details</a></li>
+              <li>
+                <a href="mailto:hello@example.pk"
+                  >hello@example.pk (placeholder)</a
+                >
+              </li>
+              <li>
+                <a href="tel:+923001234567">+92 300 123 4567 (placeholder)</a>
+              </li>
+            </ul>
+            <h2 class="h6 text-white mt-4">Social media</h2>
+            <ul class="list-unstyled d-flex flex-wrap gap-3 small">
+              <li>
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Instagram</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >YouTube</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Facebook</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="border-secondary my-4" />
+        <div class="d-flex justify-content-between flex-wrap gap-2 small">
+          <span>&copy; 2026 Forge Hardware. Static storefront demo.</span
+          ><span>Contact and price details are placeholders.</span>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
