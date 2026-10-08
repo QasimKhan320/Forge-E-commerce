@@ -765,7 +765,7 @@ textarea:focus-visible {
       ),
       linear-gradient(0deg, rgb(10 11 11 / 48%), transparent 42%),
       url("https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=1200&q=85")
-        58% center / cover no-repeat;
+        54% center / cover no-repeat;
   }
 
   .product-body .btn {
