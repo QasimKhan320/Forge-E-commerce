@@ -16,8 +16,8 @@
   </head>
   <body>
     <!-- Shared navigation links visitors to the store's main areas. -->
-    <nav class="site-nav">
-      <div class="container nav-wrap">
+    <nav class="site-nav sticky-top">
+      <div class="container d-flex align-items-center justify-content-between gap-3 py-2">
         <a class="navbar-brand" href="index.html" aria-label="Forge home">
           <span class="brand-mark">F</span>
           <span
@@ -25,7 +25,7 @@
             ><span class="brand-caption">Gaming & PC</span></span
           >
         </a>
-        <div class="desktop-links" aria-label="Main navigation">
+        <div class="d-none d-lg-flex align-items-center gap-4" aria-label="Main navigation">
           <a class="site-link" href="index.html">Home</a>
           <a
             class="site-link active"
@@ -39,12 +39,12 @@
           <a class="site-link" href="about.html">About</a>
           <a class="site-link" href="contact.html">Contact</a>
         </div>
-        <div class="nav-actions">
-          <a class="btn btn-quiet btn-sm" href="login.html">Account</a>
-          <a class="btn btn-accent btn-sm" href="cart.html">Cart</a>
+        <div class="d-none d-lg-flex align-items-center gap-2">
+          <a class="btn btn-outline-light btn-sm" href="login.html">Account</a>
+          <a class="btn btn-primary btn-sm" href="cart.html">Cart</a>
         </div>
-        <details class="mobile-menu">
-          <summary class="btn btn-quiet btn-sm">
+        <details class="d-lg-none position-relative mobile-menu">
+          <summary class="btn btn-outline-light btn-sm">
             <span aria-hidden="true">☰</span> Menu
           </summary>
           <div class="mobile-menu-panel" aria-label="Mobile navigation">
@@ -67,20 +67,20 @@
 
     <main>
       <!-- Catalog layout groups gaming gear into clear product categories. -->
-      <section class="section-space">
+      <section class="py-5">
         <div class="container">
           <div class="eyebrow mb-2">THE FORGE STORE</div>
-          <div class="section-heading align-items-end">
+          <div class="d-flex flex-column flex-md-row align-items-md-end justify-content-between gap-3 mb-4 align-items-end">
             <div>
-              <h1 class="page-heading mb-2">Find your next upgrade.</h1>
-              <p class="muted mb-0">
+              <h1 class="display-4 fw-bold mb-2">Find your next upgrade.</h1>
+              <p class="text-body-secondary mb-0">
                 Gaming PCs, laptops, components, and gear for your setup.
               </p>
             </div>
-            <a class="btn btn-accent" href="byo-pc.html">Build a PC</a>
+            <a class="btn btn-primary" href="byo-pc.html">Build a PC</a>
           </div>
 
-          <div class="catalog-tools mb-4">
+          <div class="card p-3 mb-4">
             <form class="row g-3 align-items-end" role="search">
               <div class="col-lg-6">
                 <label class="form-label" for="search">Search the store</label>
@@ -113,30 +113,30 @@
               </div>
             </form>
             <div class="d-flex flex-wrap gap-2 mt-3" aria-label="Categories">
-              <a class="category-chip" href="#gaming-pcs">Gaming PCs</a>
-              <a class="category-chip" href="#laptops">Laptops</a>
-              <a class="category-chip" href="#components">Components</a>
-              <a class="category-chip" href="#graphics">GPU</a>
-              <a class="category-chip" href="#cpu">CPU</a>
-              <a class="category-chip" href="#motherboard">Motherboard</a>
-              <a class="category-chip" href="#memory">RAM</a>
-              <a class="category-chip" href="#storage">Storage</a>
-              <a class="category-chip" href="#power">PSU</a>
-              <a class="category-chip" href="#case">Case</a>
-              <a class="category-chip" href="#cooling">Cooler</a>
-              <a class="category-chip" href="#monitors">Monitors</a>
-              <a class="category-chip" href="#peripherals">Peripherals</a>
-              <a class="category-chip" href="#audio">Audio</a>
+              <a class="btn btn-sm btn-outline-light rounded-pill" href="#gaming-pcs">Gaming PCs</a>
+              <a class="btn btn-sm btn-outline-light rounded-pill" href="#laptops">Laptops</a>
+              <a class="btn btn-sm btn-outline-light rounded-pill" href="#components">Components</a>
+              <a class="btn btn-sm btn-outline-light rounded-pill" href="#graphics">GPU</a>
+              <a class="btn btn-sm btn-outline-light rounded-pill" href="#cpu">CPU</a>
+              <a class="btn btn-sm btn-outline-light rounded-pill" href="#motherboard">Motherboard</a>
+              <a class="btn btn-sm btn-outline-light rounded-pill" href="#memory">RAM</a>
+              <a class="btn btn-sm btn-outline-light rounded-pill" href="#storage">Storage</a>
+              <a class="btn btn-sm btn-outline-light rounded-pill" href="#power">PSU</a>
+              <a class="btn btn-sm btn-outline-light rounded-pill" href="#case">Case</a>
+              <a class="btn btn-sm btn-outline-light rounded-pill" href="#cooling">Cooler</a>
+              <a class="btn btn-sm btn-outline-light rounded-pill" href="#monitors">Monitors</a>
+              <a class="btn btn-sm btn-outline-light rounded-pill" href="#peripherals">Peripherals</a>
+              <a class="btn btn-sm btn-outline-light rounded-pill" href="#audio">Audio</a>
             </div>
           </div>
 
-          <p class="price-note mb-5">
+          <p class="small text-body-secondary mb-5">
             Prices are listed in Pakistani rupees. Availability and product
             specifications should be confirmed before ordering.
           </p>
 
           <section class="mb-5" id="gaming-pcs" aria-labelledby="pcs-heading">
-            <div class="section-heading">
+            <div class="d-flex flex-column flex-md-row align-items-md-end justify-content-between gap-3 mb-4">
               <div>
                 <div class="eyebrow mb-2">READY FOR YOUR DESK</div>
                 <h2 class="h2 mb-0" id="pcs-heading">Gaming PCs</h2>
@@ -144,61 +144,61 @@
             </div>
             <div class="row g-4">
               <div class="col-sm-6 col-lg-3">
-                <article class="product-card">
+                <article class="card h-100 product-card">
                   <a href="product-details.html">
                     <img
-                      class="product-image"
+                      class="product-image w-100 object-fit-cover"
                       src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=900&q=80"
                       alt="Assembled gaming desktop with a glass side panel"
                     />
                   </a>
-                  <div class="product-body">
+                  <div class="card-body p-3">
                     <span class="badge badge-soft mb-2">GAMING PC</span>
                     <a href="product-details.html"
-                      ><h3 class="product-title">Forge Core Gaming PC</h3></a
+                      ><h3 class="h6 fw-semibold product-title">Forge Core Gaming PC</h3></a
                     >
-                    <p class="product-meta">
+                    <p class="small text-body-secondary">
                       GeForce RTX 4070 · Ryzen 7 · 32GB DDR5
                     </p>
-                    <div class="price mb-3">Rs. 449,999</div>
+                    <div class="price fw-bold fs-5 mb-3">Rs. 449,999</div>
                     <div class="d-flex flex-wrap gap-2">
-                      <a class="btn btn-accent btn-sm flex-grow-1" href="cart.html"
+                      <a class="btn btn-primary btn-sm flex-grow-1" href="cart.html"
                         >Add to cart</a
                       >
-                      <a class="btn btn-quiet btn-sm" href="product-details.html"
+                      <a class="btn btn-outline-light btn-sm" href="product-details.html"
                         >Details</a
                       >
-                      <a class="btn btn-quiet btn-sm" href="login.html" aria-label="Add Forge Core Gaming PC to wishlist">♡</a>
+                      <a class="btn btn-outline-light btn-sm" href="login.html" aria-label="Add Forge Core Gaming PC to wishlist">♡</a>
                     </div>
                   </div>
                 </article>
               </div>
               <div class="col-sm-6 col-lg-3">
-                <article class="product-card">
+                <article class="card h-100 product-card">
                   <a href="product-details.html">
                     <img
-                      class="product-image"
+                      class="product-image w-100 object-fit-cover"
                       src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=900&q=80"
                       alt="Gaming computer in a modern desktop setup"
                     />
                   </a>
-                  <div class="product-body">
+                  <div class="card-body p-3">
                     <span class="badge badge-soft mb-2">GAMING PC</span>
                     <a href="product-details.html"
-                      ><h3 class="product-title">Forge Pulse Gaming PC</h3></a
+                      ><h3 class="h6 fw-semibold product-title">Forge Pulse Gaming PC</h3></a
                     >
-                    <p class="product-meta">
+                    <p class="small text-body-secondary">
                       GeForce RTX 4060 · Ryzen 5 · 16GB DDR5
                     </p>
-                    <div class="price mb-3">Rs. 319,999</div>
+                    <div class="price fw-bold fs-5 mb-3">Rs. 319,999</div>
                     <div class="d-flex flex-wrap gap-2">
-                      <a class="btn btn-accent btn-sm flex-grow-1" href="cart.html"
+                      <a class="btn btn-primary btn-sm flex-grow-1" href="cart.html"
                         >Add to cart</a
                       >
-                      <a class="btn btn-quiet btn-sm" href="product-details.html"
+                      <a class="btn btn-outline-light btn-sm" href="product-details.html"
                         >Details</a
                       >
-                      <a class="btn btn-quiet btn-sm" href="login.html" aria-label="Add Forge Pulse Gaming PC to wishlist">♡</a>
+                      <a class="btn btn-outline-light btn-sm" href="login.html" aria-label="Add Forge Pulse Gaming PC to wishlist">♡</a>
                     </div>
                   </div>
                 </article>
@@ -207,7 +207,7 @@
           </section>
 
           <section class="mb-5" id="laptops" aria-labelledby="laptops-heading">
-            <div class="section-heading">
+            <div class="d-flex flex-column flex-md-row align-items-md-end justify-content-between gap-3 mb-4">
               <div>
                 <div class="eyebrow mb-2">POWER THAT TRAVELS</div>
                 <h2 class="h2 mb-0" id="laptops-heading">Gaming laptops</h2>
@@ -215,31 +215,31 @@
             </div>
             <div class="row g-4">
               <div class="col-sm-6 col-lg-3">
-                <article class="product-card">
+                <article class="card h-100 product-card">
                   <a href="product-details.html">
                     <img
-                      class="product-image"
+                      class="product-image w-100 object-fit-cover"
                       src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=900&q=80"
                       alt="Gaming laptop open on a desk"
                     />
                   </a>
-                  <div class="product-body">
+                  <div class="card-body p-3">
                     <span class="badge badge-soft mb-2">LAPTOP</span>
                     <a href="product-details.html"
-                      ><h3 class="product-title">15-inch Performance Laptop</h3></a
+                      ><h3 class="h6 fw-semibold product-title">15-inch Performance Laptop</h3></a
                     >
-                    <p class="product-meta">
+                    <p class="small text-body-secondary">
                       GeForce RTX 4060 · 16GB RAM · 1TB SSD
                     </p>
-                    <div class="price mb-3">Rs. 389,999</div>
+                    <div class="price fw-bold fs-5 mb-3">Rs. 389,999</div>
                     <div class="d-flex flex-wrap gap-2">
-                      <a class="btn btn-accent btn-sm flex-grow-1" href="cart.html"
+                      <a class="btn btn-primary btn-sm flex-grow-1" href="cart.html"
                         >Add to cart</a
                       >
-                      <a class="btn btn-quiet btn-sm" href="product-details.html"
+                      <a class="btn btn-outline-light btn-sm" href="product-details.html"
                         >Details</a
                       >
-                      <a class="btn btn-quiet btn-sm" href="login.html" aria-label="Add Performance Laptop to wishlist">♡</a>
+                      <a class="btn btn-outline-light btn-sm" href="login.html" aria-label="Add Performance Laptop to wishlist">♡</a>
                     </div>
                   </div>
                 </article>
@@ -248,7 +248,7 @@
           </section>
 
           <section class="mb-5" id="components" aria-labelledby="components-heading">
-            <div class="section-heading">
+            <div class="d-flex flex-column flex-md-row align-items-md-end justify-content-between gap-3 mb-4">
               <div>
                 <div class="eyebrow mb-2">PICK YOUR PARTS</div>
                 <h2 class="h2 mb-0" id="components-heading">PC components</h2>
@@ -257,129 +257,129 @@
             </div>
             <div class="row g-4">
               <div class="col-sm-6 col-lg-3" id="graphics">
-                <article class="product-card">
-                  <a href="product-details.html"><img class="product-image" src="https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=900&q=80" alt="Discrete graphics card for desktop PC" /></a>
-                  <div class="product-body">
+                <article class="card h-100 product-card">
+                  <a href="product-details.html"><img class="product-image w-100 object-fit-cover" src="https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=900&q=80" alt="Discrete graphics card for desktop PC" /></a>
+                  <div class="card-body p-3">
                     <span class="badge badge-soft mb-2">GRAPHICS CARD</span>
-                    <a href="product-details.html"><h3 class="product-title">GeForce RTX 4070 12GB</h3></a>
-                    <p class="product-meta">12GB GDDR6X · PCIe 4.0 x16</p>
-                    <div class="price mb-3">Rs. 189,999</div>
+                    <a href="product-details.html"><h3 class="h6 fw-semibold product-title">GeForce RTX 4070 12GB</h3></a>
+                    <p class="small text-body-secondary">12GB GDDR6X · PCIe 4.0 x16</p>
+                    <div class="price fw-bold fs-5 mb-3">Rs. 189,999</div>
                     <div class="d-flex flex-wrap gap-2">
-                      <a class="btn btn-accent btn-sm flex-grow-1" href="cart.html">Add to cart</a>
-                      <a class="btn btn-quiet btn-sm" href="product-details.html">Details</a>
-                      <a class="btn btn-quiet btn-sm" href="login.html" aria-label="Add GeForce RTX 4070 to wishlist">♡</a>
+                      <a class="btn btn-primary btn-sm flex-grow-1" href="cart.html">Add to cart</a>
+                      <a class="btn btn-outline-light btn-sm" href="product-details.html">Details</a>
+                      <a class="btn btn-outline-light btn-sm" href="login.html" aria-label="Add GeForce RTX 4070 to wishlist">♡</a>
                     </div>
                   </div>
                 </article>
               </div>
               <div class="col-sm-6 col-lg-3">
-                <article class="product-card">
-                  <a href="product-details.html"><img class="product-image" src="https://images.unsplash.com/photo-1555617981-dac3880eac6e?auto=format&fit=crop&w=900&q=80" alt="Desktop processor component" /></a>
-                  <div class="product-body">
+                <article class="card h-100 product-card">
+                  <a href="product-details.html"><img class="product-image w-100 object-fit-cover" src="https://images.unsplash.com/photo-1555617981-dac3880eac6e?auto=format&fit=crop&w=900&q=80" alt="Desktop processor component" /></a>
+                  <div class="card-body p-3">
                     <span class="badge badge-soft mb-2">PROCESSOR</span>
-                    <a href="product-details.html"><h3 class="product-title" id="cpu">AMD Ryzen 7 7800X3D</h3></a>
-                    <p class="product-meta">8 cores · Socket AM5</p>
-                    <div class="price mb-3">Rs. 119,999</div>
+                    <a href="product-details.html"><h3 class="h6 fw-semibold product-title" id="cpu">AMD Ryzen 7 7800X3D</h3></a>
+                    <p class="small text-body-secondary">8 cores · Socket AM5</p>
+                    <div class="price fw-bold fs-5 mb-3">Rs. 119,999</div>
                     <div class="d-flex flex-wrap gap-2">
-                      <a class="btn btn-accent btn-sm flex-grow-1" href="cart.html">Add to cart</a>
-                      <a class="btn btn-quiet btn-sm" href="product-details.html">Details</a>
-                      <a class="btn btn-quiet btn-sm" href="login.html" aria-label="Add AMD Ryzen 7 7800X3D to wishlist">♡</a>
+                      <a class="btn btn-primary btn-sm flex-grow-1" href="cart.html">Add to cart</a>
+                      <a class="btn btn-outline-light btn-sm" href="product-details.html">Details</a>
+                      <a class="btn btn-outline-light btn-sm" href="login.html" aria-label="Add AMD Ryzen 7 7800X3D to wishlist">♡</a>
                     </div>
                   </div>
                 </article>
               </div>
               <div class="col-sm-6 col-lg-3">
-                <article class="product-card">
-                  <a href="product-details.html"><img class="product-image" src="https://images.unsplash.com/photo-1587202372634-32705e3bf49c?auto=format&fit=crop&w=900&q=80" alt="Motherboard installed inside a desktop PC" /></a>
-                  <div class="product-body">
+                <article class="card h-100 product-card">
+                  <a href="product-details.html"><img class="product-image w-100 object-fit-cover" src="https://images.unsplash.com/photo-1587202372634-32705e3bf49c?auto=format&fit=crop&w=900&q=80" alt="Motherboard installed inside a desktop PC" /></a>
+                  <div class="card-body p-3">
                     <span class="badge badge-soft mb-2">MOTHERBOARD</span>
-                    <a href="product-details.html"><h3 class="product-title" id="motherboard">B650 Gaming Wi-Fi Motherboard</h3></a>
-                    <p class="product-meta">AM5 socket · DDR5 · ATX</p>
-                    <div class="price mb-3">Rs. 54,999</div>
+                    <a href="product-details.html"><h3 class="h6 fw-semibold product-title" id="motherboard">B650 Gaming Wi-Fi Motherboard</h3></a>
+                    <p class="small text-body-secondary">AM5 socket · DDR5 · ATX</p>
+                    <div class="price fw-bold fs-5 mb-3">Rs. 54,999</div>
                     <div class="d-flex flex-wrap gap-2">
-                      <a class="btn btn-accent btn-sm flex-grow-1" href="cart.html">Add to cart</a>
-                      <a class="btn btn-quiet btn-sm" href="product-details.html">Details</a>
-                      <a class="btn btn-quiet btn-sm" href="login.html" aria-label="Add B650 motherboard to wishlist">♡</a>
+                      <a class="btn btn-primary btn-sm flex-grow-1" href="cart.html">Add to cart</a>
+                      <a class="btn btn-outline-light btn-sm" href="product-details.html">Details</a>
+                      <a class="btn btn-outline-light btn-sm" href="login.html" aria-label="Add B650 motherboard to wishlist">♡</a>
                     </div>
                   </div>
                 </article>
               </div>
               <div class="col-sm-6 col-lg-3">
-                <article class="product-card">
-                  <a href="product-details.html"><img class="product-image" src="https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=900&q=80" alt="Solid state drive and PC storage components" /></a>
-                  <div class="product-body">
+                <article class="card h-100 product-card">
+                  <a href="product-details.html"><img class="product-image w-100 object-fit-cover" src="https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=900&q=80" alt="Solid state drive and PC storage components" /></a>
+                  <div class="card-body p-3">
                     <span class="badge badge-soft mb-2">STORAGE</span>
-                    <a href="product-details.html"><h3 class="product-title" id="storage">NVMe SSD 2TB</h3></a>
-                    <p class="product-meta">M.2 2280 · PCIe 4.0</p>
-                    <div class="price mb-3">Rs. 29,999</div>
+                    <a href="product-details.html"><h3 class="h6 fw-semibold product-title" id="storage">NVMe SSD 2TB</h3></a>
+                    <p class="small text-body-secondary">M.2 2280 · PCIe 4.0</p>
+                    <div class="price fw-bold fs-5 mb-3">Rs. 29,999</div>
                     <div class="d-flex flex-wrap gap-2">
-                      <a class="btn btn-accent btn-sm flex-grow-1" href="cart.html">Add to cart</a>
-                      <a class="btn btn-quiet btn-sm" href="product-details.html">Details</a>
-                      <a class="btn btn-quiet btn-sm" href="login.html" aria-label="Add NVMe SSD to wishlist">♡</a>
+                      <a class="btn btn-primary btn-sm flex-grow-1" href="cart.html">Add to cart</a>
+                      <a class="btn btn-outline-light btn-sm" href="product-details.html">Details</a>
+                      <a class="btn btn-outline-light btn-sm" href="login.html" aria-label="Add NVMe SSD to wishlist">♡</a>
                     </div>
                   </div>
                 </article>
               </div>
               <div class="col-sm-6 col-lg-3">
-                <article class="product-card">
-                  <a href="product-details.html"><img class="product-image" src="https://images.unsplash.com/photo-1562976540-1502c2145186?auto=format&fit=crop&w=900&q=80" alt="DDR5 desktop memory modules" /></a>
-                  <div class="product-body">
+                <article class="card h-100 product-card">
+                  <a href="product-details.html"><img class="product-image w-100 object-fit-cover" src="https://images.unsplash.com/photo-1562976540-1502c2145186?auto=format&fit=crop&w=900&q=80" alt="DDR5 desktop memory modules" /></a>
+                  <div class="card-body p-3">
                     <span class="badge badge-soft mb-2">MEMORY</span>
-                    <a href="product-details.html"><h3 class="product-title" id="memory">DDR5 32GB Memory Kit</h3></a>
-                    <p class="product-meta">2 × 16GB · DDR5 desktop memory</p>
-                    <div class="price mb-3">Rs. 34,999</div>
+                    <a href="product-details.html"><h3 class="h6 fw-semibold product-title" id="memory">DDR5 32GB Memory Kit</h3></a>
+                    <p class="small text-body-secondary">2 × 16GB · DDR5 desktop memory</p>
+                    <div class="price fw-bold fs-5 mb-3">Rs. 34,999</div>
                     <div class="d-flex flex-wrap gap-2">
-                      <a class="btn btn-accent btn-sm flex-grow-1" href="cart.html">Add to cart</a>
-                      <a class="btn btn-quiet btn-sm" href="product-details.html">Details</a>
-                      <a class="btn btn-quiet btn-sm" href="login.html" aria-label="Add DDR5 32GB Memory Kit to wishlist">♡</a>
+                      <a class="btn btn-primary btn-sm flex-grow-1" href="cart.html">Add to cart</a>
+                      <a class="btn btn-outline-light btn-sm" href="product-details.html">Details</a>
+                      <a class="btn btn-outline-light btn-sm" href="login.html" aria-label="Add DDR5 32GB Memory Kit to wishlist">♡</a>
                     </div>
                   </div>
                 </article>
               </div>
               <div class="col-sm-6 col-lg-3">
-                <article class="product-card">
-                  <a href="product-details.html"><img class="product-image" src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=900&q=80" alt="Power supply unit installed in a desktop PC" /></a>
-                  <div class="product-body">
+                <article class="card h-100 product-card">
+                  <a href="product-details.html"><img class="product-image w-100 object-fit-cover" src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=900&q=80" alt="Power supply unit installed in a desktop PC" /></a>
+                  <div class="card-body p-3">
                     <span class="badge badge-soft mb-2">POWER SUPPLY</span>
-                    <a href="product-details.html"><h3 class="product-title" id="power">750W 80+ Gold PSU</h3></a>
-                    <p class="product-meta">750W · 80+ Gold rated</p>
-                    <div class="price mb-3">Rs. 34,999</div>
+                    <a href="product-details.html"><h3 class="h6 fw-semibold product-title" id="power">750W 80+ Gold PSU</h3></a>
+                    <p class="small text-body-secondary">750W · 80+ Gold rated</p>
+                    <div class="price fw-bold fs-5 mb-3">Rs. 34,999</div>
                     <div class="d-flex flex-wrap gap-2">
-                      <a class="btn btn-accent btn-sm flex-grow-1" href="cart.html">Add to cart</a>
-                      <a class="btn btn-quiet btn-sm" href="product-details.html">Details</a>
-                      <a class="btn btn-quiet btn-sm" href="login.html" aria-label="Add 750W Gold PSU to wishlist">♡</a>
+                      <a class="btn btn-primary btn-sm flex-grow-1" href="cart.html">Add to cart</a>
+                      <a class="btn btn-outline-light btn-sm" href="product-details.html">Details</a>
+                      <a class="btn btn-outline-light btn-sm" href="login.html" aria-label="Add 750W Gold PSU to wishlist">♡</a>
                     </div>
                   </div>
                 </article>
               </div>
               <div class="col-sm-6 col-lg-3">
-                <article class="product-card">
-                  <a href="product-details.html"><img class="product-image" src="https://images.unsplash.com/photo-1587202372634-32705e3bf49c?auto=format&fit=crop&w=900&q=80" alt="Mid-tower PC case with a glass side panel" /></a>
-                  <div class="product-body">
+                <article class="card h-100 product-card">
+                  <a href="product-details.html"><img class="product-image w-100 object-fit-cover" src="https://images.unsplash.com/photo-1587202372634-32705e3bf49c?auto=format&fit=crop&w=900&q=80" alt="Mid-tower PC case with a glass side panel" /></a>
+                  <div class="card-body p-3">
                     <span class="badge badge-soft mb-2">PC CASE</span>
-                    <a href="product-details.html"><h3 class="product-title" id="case">Airflow Mid-Tower Case</h3></a>
-                    <p class="product-meta">ATX · Tempered glass side panel</p>
-                    <div class="price mb-3">Rs. 49,999</div>
+                    <a href="product-details.html"><h3 class="h6 fw-semibold product-title" id="case">Airflow Mid-Tower Case</h3></a>
+                    <p class="small text-body-secondary">ATX · Tempered glass side panel</p>
+                    <div class="price fw-bold fs-5 mb-3">Rs. 49,999</div>
                     <div class="d-flex flex-wrap gap-2">
-                      <a class="btn btn-accent btn-sm flex-grow-1" href="cart.html">Add to cart</a>
-                      <a class="btn btn-quiet btn-sm" href="product-details.html">Details</a>
-                      <a class="btn btn-quiet btn-sm" href="login.html" aria-label="Add Airflow Mid-Tower Case to wishlist">♡</a>
+                      <a class="btn btn-primary btn-sm flex-grow-1" href="cart.html">Add to cart</a>
+                      <a class="btn btn-outline-light btn-sm" href="product-details.html">Details</a>
+                      <a class="btn btn-outline-light btn-sm" href="login.html" aria-label="Add Airflow Mid-Tower Case to wishlist">♡</a>
                     </div>
                   </div>
                 </article>
               </div>
               <div class="col-sm-6 col-lg-3">
-                <article class="product-card">
-                  <a href="product-details.html"><img class="product-image" src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=900&q=80" alt="Cooling fans inside a desktop PC" /></a>
-                  <div class="product-body">
+                <article class="card h-100 product-card">
+                  <a href="product-details.html"><img class="product-image w-100 object-fit-cover" src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=900&q=80" alt="Cooling fans inside a desktop PC" /></a>
+                  <div class="card-body p-3">
                     <span class="badge badge-soft mb-2">CPU COOLER</span>
-                    <a href="product-details.html"><h3 class="product-title" id="cooling">Dual-Tower Air Cooler</h3></a>
-                    <p class="product-meta">Dual tower · Dual fan</p>
-                    <div class="price mb-3">Rs. 24,999</div>
+                    <a href="product-details.html"><h3 class="h6 fw-semibold product-title" id="cooling">Dual-Tower Air Cooler</h3></a>
+                    <p class="small text-body-secondary">Dual tower · Dual fan</p>
+                    <div class="price fw-bold fs-5 mb-3">Rs. 24,999</div>
                     <div class="d-flex flex-wrap gap-2">
-                      <a class="btn btn-accent btn-sm flex-grow-1" href="cart.html">Add to cart</a>
-                      <a class="btn btn-quiet btn-sm" href="product-details.html">Details</a>
-                      <a class="btn btn-quiet btn-sm" href="login.html" aria-label="Add Dual-Tower Air Cooler to wishlist">♡</a>
+                      <a class="btn btn-primary btn-sm flex-grow-1" href="cart.html">Add to cart</a>
+                      <a class="btn btn-outline-light btn-sm" href="product-details.html">Details</a>
+                      <a class="btn btn-outline-light btn-sm" href="login.html" aria-label="Add Dual-Tower Air Cooler to wishlist">♡</a>
                     </div>
                   </div>
                 </article>
@@ -388,7 +388,7 @@
           </section>
 
           <section class="mb-5" id="monitors" aria-labelledby="monitors-heading">
-            <div class="section-heading">
+            <div class="d-flex flex-column flex-md-row align-items-md-end justify-content-between gap-3 mb-4">
               <div>
                 <div class="eyebrow mb-2">SEE EVERY FRAME</div>
                 <h2 class="h2 mb-0" id="monitors-heading">Monitors</h2>
@@ -396,17 +396,17 @@
             </div>
             <div class="row g-4">
               <div class="col-sm-6 col-lg-3">
-                <article class="product-card">
-                  <a href="product-details.html"><img class="product-image" src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=900&q=80" alt="Gaming monitor on a desk" /></a>
-                  <div class="product-body">
+                <article class="card h-100 product-card">
+                  <a href="product-details.html"><img class="product-image w-100 object-fit-cover" src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=900&q=80" alt="Gaming monitor on a desk" /></a>
+                  <div class="card-body p-3">
                     <span class="badge badge-soft mb-2">MONITOR</span>
-                    <a href="product-details.html"><h3 class="product-title">27-inch QHD Gaming Monitor</h3></a>
-                    <p class="product-meta">2560 × 1440 · High refresh rate</p>
-                    <div class="price mb-3">Rs. 89,999</div>
+                    <a href="product-details.html"><h3 class="h6 fw-semibold product-title">27-inch QHD Gaming Monitor</h3></a>
+                    <p class="small text-body-secondary">2560 × 1440 · High refresh rate</p>
+                    <div class="price fw-bold fs-5 mb-3">Rs. 89,999</div>
                     <div class="d-flex flex-wrap gap-2">
-                      <a class="btn btn-accent btn-sm flex-grow-1" href="cart.html">Add to cart</a>
-                      <a class="btn btn-quiet btn-sm" href="product-details.html">Details</a>
-                      <a class="btn btn-quiet btn-sm" href="login.html" aria-label="Add QHD Gaming Monitor to wishlist">♡</a>
+                      <a class="btn btn-primary btn-sm flex-grow-1" href="cart.html">Add to cart</a>
+                      <a class="btn btn-outline-light btn-sm" href="product-details.html">Details</a>
+                      <a class="btn btn-outline-light btn-sm" href="login.html" aria-label="Add QHD Gaming Monitor to wishlist">♡</a>
                     </div>
                   </div>
                 </article>
@@ -415,7 +415,7 @@
           </section>
 
           <section id="peripherals" aria-labelledby="peripherals-heading">
-            <div class="section-heading">
+            <div class="d-flex flex-column flex-md-row align-items-md-end justify-content-between gap-3 mb-4">
               <div>
                 <div class="eyebrow mb-2">YOUR CONTROL</div>
                 <h2 class="h2 mb-0" id="peripherals-heading">
@@ -425,33 +425,33 @@
             </div>
             <div class="row g-4">
               <div class="col-sm-6 col-lg-3">
-                <article class="product-card">
-                  <a href="product-details.html"><img class="product-image" src="https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=900&q=80" alt="Ergonomic wireless gaming mouse" /></a>
-                  <div class="product-body">
+                <article class="card h-100 product-card">
+                  <a href="product-details.html"><img class="product-image w-100 object-fit-cover" src="https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=900&q=80" alt="Ergonomic wireless gaming mouse" /></a>
+                  <div class="card-body p-3">
                     <span class="badge badge-soft mb-2">MOUSE</span>
-                    <a href="product-details.html"><h3 class="product-title">Wireless Gaming Mouse</h3></a>
-                    <p class="product-meta">Ergonomic · Adjustable DPI</p>
-                    <div class="price mb-3">Rs. 12,999</div>
+                    <a href="product-details.html"><h3 class="h6 fw-semibold product-title">Wireless Gaming Mouse</h3></a>
+                    <p class="small text-body-secondary">Ergonomic · Adjustable DPI</p>
+                    <div class="price fw-bold fs-5 mb-3">Rs. 12,999</div>
                     <div class="d-flex flex-wrap gap-2">
-                      <a class="btn btn-accent btn-sm flex-grow-1" href="cart.html">Add to cart</a>
-                      <a class="btn btn-quiet btn-sm" href="product-details.html">Details</a>
-                      <a class="btn btn-quiet btn-sm" href="login.html" aria-label="Add Wireless Gaming Mouse to wishlist">♡</a>
+                      <a class="btn btn-primary btn-sm flex-grow-1" href="cart.html">Add to cart</a>
+                      <a class="btn btn-outline-light btn-sm" href="product-details.html">Details</a>
+                      <a class="btn btn-outline-light btn-sm" href="login.html" aria-label="Add Wireless Gaming Mouse to wishlist">♡</a>
                     </div>
                   </div>
                 </article>
               </div>
               <div class="col-sm-6 col-lg-3" id="audio">
-                <article class="product-card">
-                  <a href="product-details.html"><img class="product-image" src="https://images.unsplash.com/photo-1599669454699-248893623440?auto=format&fit=crop&w=900&q=80" alt="Over-ear gaming headset" /></a>
-                  <div class="product-body">
+                <article class="card h-100 product-card">
+                  <a href="product-details.html"><img class="product-image w-100 object-fit-cover" src="https://images.unsplash.com/photo-1599669454699-248893623440?auto=format&fit=crop&w=900&q=80" alt="Over-ear gaming headset" /></a>
+                  <div class="card-body p-3">
                     <span class="badge badge-soft mb-2">AUDIO</span>
-                    <a href="product-details.html"><h3 class="product-title">Over-Ear Gaming Headset</h3></a>
-                    <p class="product-meta">Over-ear · Detachable microphone</p>
-                    <div class="price mb-3">Rs. 18,999</div>
+                    <a href="product-details.html"><h3 class="h6 fw-semibold product-title">Over-Ear Gaming Headset</h3></a>
+                    <p class="small text-body-secondary">Over-ear · Detachable microphone</p>
+                    <div class="price fw-bold fs-5 mb-3">Rs. 18,999</div>
                     <div class="d-flex flex-wrap gap-2">
-                      <a class="btn btn-accent btn-sm flex-grow-1" href="cart.html">Add to cart</a>
-                      <a class="btn btn-quiet btn-sm" href="product-details.html">Details</a>
-                      <a class="btn btn-quiet btn-sm" href="login.html" aria-label="Add Gaming Headset to wishlist">♡</a>
+                      <a class="btn btn-primary btn-sm flex-grow-1" href="cart.html">Add to cart</a>
+                      <a class="btn btn-outline-light btn-sm" href="product-details.html">Details</a>
+                      <a class="btn btn-outline-light btn-sm" href="login.html" aria-label="Add Gaming Headset to wishlist">♡</a>
                     </div>
                   </div>
                 </article>
@@ -459,8 +459,8 @@
             </div>
           </section>
 
-          <section class="section-tight" id="chairs" aria-labelledby="chairs-heading">
-            <div class="section-heading">
+          <section class="py-4" id="chairs" aria-labelledby="chairs-heading">
+            <div class="d-flex flex-column flex-md-row align-items-md-end justify-content-between gap-3 mb-4">
               <div>
                 <div class="eyebrow mb-2">SETTLE IN</div>
                 <h2 class="h2 mb-0" id="chairs-heading">Chairs & desks</h2>
@@ -468,17 +468,17 @@
             </div>
             <div class="row g-4">
               <div class="col-sm-6 col-lg-3">
-                <article class="product-card">
-                  <a href="product-details.html"><img class="product-image" src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=900&q=80" alt="Ergonomic chair for a gaming desk" /></a>
-                  <div class="product-body">
+                <article class="card h-100 product-card">
+                  <a href="product-details.html"><img class="product-image w-100 object-fit-cover" src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=900&q=80" alt="Ergonomic chair for a gaming desk" /></a>
+                  <div class="card-body p-3">
                     <span class="badge badge-soft mb-2">CHAIR</span>
-                    <a href="product-details.html"><h3 class="product-title">Ergonomic Gaming Chair</h3></a>
-                    <p class="product-meta">Adjustable height · Lumbar support</p>
-                    <div class="price mb-3">Rs. 54,999</div>
+                    <a href="product-details.html"><h3 class="h6 fw-semibold product-title">Ergonomic Gaming Chair</h3></a>
+                    <p class="small text-body-secondary">Adjustable height · Lumbar support</p>
+                    <div class="price fw-bold fs-5 mb-3">Rs. 54,999</div>
                     <div class="d-flex flex-wrap gap-2">
-                      <a class="btn btn-accent btn-sm flex-grow-1" href="cart.html">Add to cart</a>
-                      <a class="btn btn-quiet btn-sm" href="product-details.html">Details</a>
-                      <a class="btn btn-quiet btn-sm" href="login.html" aria-label="Add Ergonomic Gaming Chair to wishlist">♡</a>
+                      <a class="btn btn-primary btn-sm flex-grow-1" href="cart.html">Add to cart</a>
+                      <a class="btn btn-outline-light btn-sm" href="product-details.html">Details</a>
+                      <a class="btn btn-outline-light btn-sm" href="login.html" aria-label="Add Ergonomic Gaming Chair to wishlist">♡</a>
                     </div>
                   </div>
                 </article>
@@ -486,8 +486,8 @@
             </div>
           </section>
 
-          <section class="section-tight" id="accessories" aria-labelledby="accessories-heading">
-            <div class="section-heading">
+          <section class="py-4" id="accessories" aria-labelledby="accessories-heading">
+            <div class="d-flex flex-column flex-md-row align-items-md-end justify-content-between gap-3 mb-4">
               <div>
                 <div class="eyebrow mb-2">THE LITTLE EXTRAS</div>
                 <h2 class="h2 mb-0" id="accessories-heading">Accessories</h2>
@@ -495,17 +495,17 @@
             </div>
             <div class="row g-4">
               <div class="col-sm-6 col-lg-3">
-                <article class="product-card">
-                  <a href="product-details.html"><img class="product-image" src="https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?auto=format&fit=crop&w=900&q=80" alt="RGB mechanical keyboard for a gaming setup" /></a>
-                  <div class="product-body">
+                <article class="card h-100 product-card">
+                  <a href="product-details.html"><img class="product-image w-100 object-fit-cover" src="https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?auto=format&fit=crop&w=900&q=80" alt="RGB mechanical keyboard for a gaming setup" /></a>
+                  <div class="card-body p-3">
                     <span class="badge badge-soft mb-2">KEYBOARD</span>
-                    <a href="product-details.html"><h3 class="product-title">Mechanical Gaming Keyboard</h3></a>
-                    <p class="product-meta">Mechanical switches · RGB lighting</p>
-                    <div class="price mb-3">Rs. 16,999</div>
+                    <a href="product-details.html"><h3 class="h6 fw-semibold product-title">Mechanical Gaming Keyboard</h3></a>
+                    <p class="small text-body-secondary">Mechanical switches · RGB lighting</p>
+                    <div class="price fw-bold fs-5 mb-3">Rs. 16,999</div>
                     <div class="d-flex flex-wrap gap-2">
-                      <a class="btn btn-accent btn-sm flex-grow-1" href="cart.html">Add to cart</a>
-                      <a class="btn btn-quiet btn-sm" href="product-details.html">Details</a>
-                      <a class="btn btn-quiet btn-sm" href="login.html" aria-label="Add Mechanical Gaming Keyboard to wishlist">♡</a>
+                      <a class="btn btn-primary btn-sm flex-grow-1" href="cart.html">Add to cart</a>
+                      <a class="btn btn-outline-light btn-sm" href="product-details.html">Details</a>
+                      <a class="btn btn-outline-light btn-sm" href="login.html" aria-label="Add Mechanical Gaming Keyboard to wishlist">♡</a>
                     </div>
                   </div>
                 </article>
@@ -528,7 +528,7 @@
               >
             </a>
             <p class="small mt-3">PC hardware, gaming gear, and build inspiration.</p>
-            <p class="small muted mb-0">Lahore, Pakistan · Store details shown are placeholders.</p>
+            <p class="small text-body-secondary mb-0">Lahore, Pakistan · Store details shown are placeholders.</p>
           </div>
           <div class="col-6 col-lg-2">
             <h2>Shop</h2>

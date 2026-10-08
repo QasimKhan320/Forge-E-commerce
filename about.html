@@ -11,25 +11,25 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="site-nav">
-  <div class="container nav-wrap">
+    <nav class="site-nav sticky-top">
+  <div class="container d-flex align-items-center justify-content-between gap-3 py-2">
     <a class="navbar-brand" href="index.html" aria-label="Forge home">
       <span class="brand-mark">F</span>
       <span>FORGE<span class="text-accent">.</span><span class="brand-caption">Gaming &amp; PC</span></span>
     </a>
-    <div class="desktop-links" aria-label="Main navigation">
+    <div class="d-none d-lg-flex align-items-center gap-4" aria-label="Main navigation">
           <a class="site-link" href="index.html">Home</a>
           <a class="site-link" href="products.html">Shop</a>
           <a class="site-link site-link-builder" href="byo-pc.html">Build a PC</a>
           <a class="site-link active" href="about.html" aria-current="page">About</a>
           <a class="site-link" href="contact.html">Contact</a>
     </div>
-    <div class="nav-actions">
-      <a class="btn btn-quiet btn-sm" href="login.html">Account</a>
-      <a class="btn btn-accent btn-sm" href="cart.html">Cart</a>
+    <div class="d-none d-lg-flex align-items-center gap-2">
+      <a class="btn btn-outline-light btn-sm" href="login.html">Account</a>
+      <a class="btn btn-primary btn-sm" href="cart.html">Cart</a>
     </div>
-    <details class="mobile-menu">
-      <summary class="btn btn-quiet btn-sm"><span aria-hidden="true">☰</span> Menu</summary>
+    <details class="d-lg-none position-relative mobile-menu">
+      <summary class="btn btn-outline-light btn-sm"><span aria-hidden="true">☰</span> Menu</summary>
       <div class="mobile-menu-panel" aria-label="Mobile navigation">
             <a class="site-link" href="index.html">Home</a>
             <a class="site-link" href="products.html">Shop</a>
@@ -45,32 +45,32 @@
 </nav>
     <main>
       <!-- Main content: company story, mission, and team. -->
-      <section class="section-space">
+      <section class="py-5">
         <div class="container">
-          <div class="row g-5 align-items-center">
+          <div class="row g-4 align-items-center">
             <div class="col-lg-6">
               <div class="eyebrow mb-3">A STORE BUILT BY BUILDERS</div>
-              <h1 class="page-heading mb-4">
+              <h1 class="display-4 fw-bold mb-4">
                 We believe everyone deserves a better build.
               </h1>
-              <p class="lead muted">
+              <p class="lead text-body-secondary">
                 Forge is a PC hardware store built around one simple idea:
                 choosing parts and planning a PC should feel
                 approachable, not like decoding a spec sheet alone.
               </p>
-              <p class="muted">
+              <p class="text-body-secondary">
                 The store brings together a component shop, a Build Your Own PC
                 page, and practical compatibility information. Product
                 availability and store contact details should be confirmed
                 before purchase.
               </p>
-              <a class="btn btn-dark mt-2" href="products.html"
+              <a class="btn btn-primary mt-2" href="products.html"
                 >Find your parts →</a
               >
             </div>
             <div class="col-lg-6">
               <img
-                class="details-image"
+                class="details-image img-fluid rounded-4 object-fit-cover w-100"
                 src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=1200&q=85"
                 alt="Carefully assembled gaming PC in the Forge workshop"
               />
@@ -78,38 +78,38 @@
           </div>
         </div>
       </section>
-      <section class="section-tight bg-white">
+      <section class="py-4 bg-body-tertiary">
         <div class="container">
           <div class="text-center mb-5">
             <div class="eyebrow mb-2">WHAT WE'RE HERE FOR</div>
-            <h2 class="page-heading">Good hardware. Human help.</h2>
+            <h2 class="display-4 fw-bold">Good hardware. Human help.</h2>
           </div>
           <div class="row g-4">
             <div class="col-md-4">
-              <div class="content-card h-100">
+              <div class="card p-4 h-100">
                 <div class="icon-box mb-3">◎</div>
                 <h3 class="h5">Our mission</h3>
-                <p class="muted mb-0">
+                <p class="text-body-secondary mb-0">
                   Make building a PC approachable, rewarding, and open to
                   everyone—whatever your budget or experience.
                 </p>
               </div>
             </div>
             <div class="col-md-4">
-              <div class="content-card h-100">
+              <div class="card p-4 h-100">
                 <div class="icon-box mb-3">✦</div>
                 <h3 class="h5">Our values</h3>
-                <p class="muted mb-0">
+                <p class="text-body-secondary mb-0">
                   Clear component information, thoughtful build planning, and
                   honest notes when a detail needs checking.
                 </p>
               </div>
             </div>
             <div class="col-md-4">
-              <div class="content-card h-100">
+              <div class="card p-4 h-100">
                 <div class="icon-box mb-3">↗</div>
                 <h3 class="h5">The Forge difference</h3>
-                <p class="muted mb-0">
+                <p class="text-body-secondary mb-0">
                   Compatibility information, a focused hardware range, and
                   support for planning a PC build.
                 </p>
@@ -118,12 +118,12 @@
           </div>
         </div>
       </section>
-      <section class="section-space">
+      <section class="py-5">
         <div class="container">
           <div class="text-center mb-5">
             <div class="eyebrow mb-2">THE PEOPLE BEHIND THE BUILD</div>
-            <h2 class="page-heading">The people behind a better build.</h2>
-            <p class="muted mb-0">
+            <h2 class="display-4 fw-bold">The people behind a better build.</h2>
+            <p class="text-body-secondary mb-0">
               Team profiles and role descriptions can be updated with your
               store's information.
             </p>
@@ -131,39 +131,39 @@
           <div class="row g-4">
             <div class="col-6 col-lg-3">
               <img
-                class="team-photo mb-3"
+                class="team-photo img-fluid rounded-4 object-fit-cover w-100 mb-3"
                 src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=700&q=80"
                 alt="Illustrative team profile placeholder"
               />
               <h3 class="h5 mb-1">Builder profile 01</h3>
-              <p class="muted small">Custom PC building</p>
+              <p class="text-body-secondary small">Custom PC building</p>
             </div>
             <div class="col-6 col-lg-3">
               <img
-                class="team-photo mb-3"
+                class="team-photo img-fluid rounded-4 object-fit-cover w-100 mb-3"
                 src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=700&q=80"
                 alt="Illustrative team profile placeholder"
               />
               <h3 class="h5 mb-1">Builder profile 02</h3>
-              <p class="muted small">PC hardware</p>
+              <p class="text-body-secondary small">PC hardware</p>
             </div>
             <div class="col-6 col-lg-3">
               <img
-                class="team-photo mb-3"
+                class="team-photo img-fluid rounded-4 object-fit-cover w-100 mb-3"
                 src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=700&q=80"
                 alt="Illustrative team profile placeholder"
               />
               <h3 class="h5 mb-1">Builder profile 03</h3>
-              <p class="muted small">Compatibility guidance</p>
+              <p class="text-body-secondary small">Compatibility guidance</p>
             </div>
             <div class="col-6 col-lg-3">
               <img
-                class="team-photo mb-3"
+                class="team-photo img-fluid rounded-4 object-fit-cover w-100 mb-3"
                 src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=700&q=80"
                 alt="Illustrative team profile placeholder"
               />
               <h3 class="h5 mb-1">Builder profile 04</h3>
-              <p class="muted small">Customer support</p>
+              <p class="text-body-secondary small">Customer support</p>
             </div>
           </div>
         </div>
@@ -175,7 +175,7 @@
       <div class="col-md-6 col-lg-3">
         <a class="navbar-brand text-white" href="index.html"><span class="brand-mark">F</span><span>FORGE<span class="text-accent">.</span><span class="brand-caption">Gaming &amp; PC</span></span></a>
         <p class="small mt-3">PC hardware, gaming gear, and build inspiration.</p>
-        <p class="small muted mb-0">Lahore, Pakistan · Store details shown are placeholders.</p>
+        <p class="small text-body-secondary mb-0">Lahore, Pakistan · Store details shown are placeholders.</p>
       </div>
       <div class="col-6 col-lg-2">
         <h2>Shop</h2>

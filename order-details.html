@@ -11,25 +11,25 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="site-nav">
-  <div class="container nav-wrap">
+    <nav class="site-nav sticky-top">
+  <div class="container d-flex align-items-center justify-content-between gap-3 py-2">
     <a class="navbar-brand" href="index.html" aria-label="Forge home">
       <span class="brand-mark">F</span>
       <span>FORGE<span class="text-accent">.</span><span class="brand-caption">Gaming &amp; PC</span></span>
     </a>
-    <div class="desktop-links" aria-label="Main navigation">
+    <div class="d-none d-lg-flex align-items-center gap-4" aria-label="Main navigation">
           <a class="site-link" href="index.html">Home</a>
           <a class="site-link" href="products.html">Shop</a>
           <a class="site-link site-link-builder" href="byo-pc.html">Build a PC</a>
           <a class="site-link" href="about.html">About</a>
           <a class="site-link" href="contact.html">Contact</a>
     </div>
-    <div class="nav-actions">
-      <a class="btn btn-quiet btn-sm" href="login.html">Account</a>
-      <a class="btn btn-accent btn-sm" href="cart.html">Cart</a>
+    <div class="d-none d-lg-flex align-items-center gap-2">
+      <a class="btn btn-outline-light btn-sm" href="login.html">Account</a>
+      <a class="btn btn-primary btn-sm" href="cart.html">Cart</a>
     </div>
-    <details class="mobile-menu">
-      <summary class="btn btn-quiet btn-sm"><span aria-hidden="true">☰</span> Menu</summary>
+    <details class="d-lg-none position-relative mobile-menu">
+      <summary class="btn btn-outline-light btn-sm"><span aria-hidden="true">☰</span> Menu</summary>
       <div class="mobile-menu-panel" aria-label="Mobile navigation">
             <a class="site-link" href="index.html">Home</a>
             <a class="site-link" href="products.html">Shop</a>
@@ -44,7 +44,7 @@
   </div>
 </nav>
 
-    <main class="section-space">
+    <main class="py-5">
       <!-- Main content: order status, shipment, items, and totals. -->
       <div class="container">
         <div
@@ -52,8 +52,8 @@
         >
           <div>
             <div class="eyebrow mb-2">SAMPLE ORDER DETAILS</div>
-            <h1 class="page-heading mb-2">Order #FG-261001</h1>
-            <p class="muted mb-0">Placed 01 October 2026 · Sample order data</p>
+            <h1 class="display-4 fw-bold mb-2">Order #FG-261001</h1>
+            <p class="text-body-secondary mb-0">Placed 01 October 2026 · Sample order data</p>
           </div>
           <span class="badge text-bg-success fs-6"
             >Delivered · example record</span
@@ -67,13 +67,13 @@
         <div class="row g-4">
           <div class="col-lg-8">
             <section
-              class="content-card p-0"
+              class="card p-0"
               aria-labelledby="order-items-heading"
             >
               <h2 class="h5 p-4 mb-0" id="order-items-heading">Products</h2>
               <div class="table-responsive">
                 <table class="table align-middle mb-0">
-                  <thead class="small text-uppercase muted">
+                  <thead class="small text-uppercase text-body-secondary">
                     <tr>
                       <th scope="col" class="ps-4">Item</th>
                       <th scope="col">Unit price</th>
@@ -96,7 +96,7 @@
                             <a href="product-details.html" class="fw-bold"
                               >GeForce RTX 4070 12GB</a
                             >
-                            <div class="small muted">
+                            <div class="small text-body-secondary">
                               Graphics card · sample item
                             </div>
                           </div>
@@ -120,7 +120,7 @@
                             <a href="product-details.html" class="fw-bold"
                               >Vengeance DDR5 32GB</a
                             >
-                            <div class="small muted">Memory · sample item</div>
+                            <div class="small text-body-secondary">Memory · sample item</div>
                           </div>
                         </div>
                       </td>
@@ -136,7 +136,7 @@
             <div class="row g-4 mt-1">
               <div class="col-md-6">
                 <section
-                  class="content-card h-100"
+                  class="card p-4 h-100"
                   aria-labelledby="customer-heading"
                 >
                   <h2 class="h5 mb-3" id="customer-heading">
@@ -151,42 +151,42 @@
               </div>
               <div class="col-md-6">
                 <section
-                  class="content-card h-100"
+                  class="card p-4 h-100"
                   aria-labelledby="shipping-heading"
                 >
                   <h2 class="h5 mb-3" id="shipping-heading">
                     Shipping information
                   </h2>
                   <p class="mb-1"><strong>Delivery address</strong></p>
-                  <p class="muted mb-2">
+                  <p class="text-body-secondary mb-2">
                     Sample address, Gulberg III<br />
                     Lahore, Punjab, Pakistan
                   </p>
-                  <p class="small muted mb-0">Address is placeholder data.</p>
+                  <p class="small text-body-secondary mb-0">Address is placeholder data.</p>
                 </section>
               </div>
             </div>
           </div>
 
           <aside class="col-lg-4" aria-label="Order summary">
-            <section class="content-card">
+            <section class="card p-4">
               <h2 class="h5 mb-4">Order summary</h2>
               <div class="d-flex justify-content-between mb-3 gap-3">
-                <span class="muted">Subtotal</span><span>Rs. 259,997</span>
+                <span class="text-body-secondary">Subtotal</span><span>Rs. 259,997</span>
               </div>
               <div class="d-flex justify-content-between mb-3 gap-3">
-                <span class="muted">Shipping estimate</span
+                <span class="text-body-secondary">Shipping estimate</span
                 ><span>Rs. 1,500</span>
               </div>
               <div class="d-flex justify-content-between mb-3 gap-3">
-                <span class="muted">Estimated tax</span><span>Rs. 20,800</span>
+                <span class="text-body-secondary">Estimated tax</span><span>Rs. 20,800</span>
               </div>
               <hr />
               <div
                 class="d-flex justify-content-between align-items-center gap-3"
               >
                 <strong>Order total</strong>
-                <strong class="order-total">Rs. 282,297</strong>
+                <strong class="fw-bold fs-4">Rs. 282,297</strong>
               </div>
               <hr />
               <h3 class="h6">Payment & fulfilment</h3>
@@ -197,7 +197,7 @@
                 <strong>Status:</strong> Delivered in example record
               </p>
             </section>
-            <a class="btn btn-outline-dark w-100 mt-3" href="orders.html">
+            <a class="btn btn-outline-light w-100 mt-3" href="orders.html">
               Back to My Orders
             </a>
           </aside>
@@ -211,7 +211,7 @@
       <div class="col-md-6 col-lg-3">
         <a class="navbar-brand text-white" href="index.html"><span class="brand-mark">F</span><span>FORGE<span class="text-accent">.</span><span class="brand-caption">Gaming &amp; PC</span></span></a>
         <p class="small mt-3">PC hardware, gaming gear, and build inspiration.</p>
-        <p class="small muted mb-0">Lahore, Pakistan · Store details shown are placeholders.</p>
+        <p class="small text-body-secondary mb-0">Lahore, Pakistan · Store details shown are placeholders.</p>
       </div>
       <div class="col-6 col-lg-2">
         <h2>Shop</h2>

@@ -11,25 +11,25 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="site-nav">
-  <div class="container nav-wrap">
+    <nav class="site-nav sticky-top">
+  <div class="container d-flex align-items-center justify-content-between gap-3 py-2">
     <a class="navbar-brand" href="index.html" aria-label="Forge home">
       <span class="brand-mark">F</span>
       <span>FORGE<span class="text-accent">.</span><span class="brand-caption">Gaming &amp; PC</span></span>
     </a>
-    <div class="desktop-links" aria-label="Main navigation">
+    <div class="d-none d-lg-flex align-items-center gap-4" aria-label="Main navigation">
           <a class="site-link" href="index.html">Home</a>
           <a class="site-link" href="products.html">Shop</a>
           <a class="site-link site-link-builder" href="byo-pc.html">Build a PC</a>
           <a class="site-link" href="about.html">About</a>
           <a class="site-link" href="contact.html">Contact</a>
     </div>
-    <div class="nav-actions">
-      <a class="btn btn-quiet btn-sm" href="login.html">Account</a>
-      <a class="btn btn-accent btn-sm" href="cart.html">Cart</a>
+    <div class="d-none d-lg-flex align-items-center gap-2">
+      <a class="btn btn-outline-light btn-sm" href="login.html">Account</a>
+      <a class="btn btn-primary btn-sm" href="cart.html">Cart</a>
     </div>
-    <details class="mobile-menu">
-      <summary class="btn btn-quiet btn-sm"><span aria-hidden="true">☰</span> Menu</summary>
+    <details class="d-lg-none position-relative mobile-menu">
+      <summary class="btn btn-outline-light btn-sm"><span aria-hidden="true">☰</span> Menu</summary>
       <div class="mobile-menu-panel" aria-label="Mobile navigation">
             <a class="site-link" href="index.html">Home</a>
             <a class="site-link" href="products.html">Shop</a>
@@ -43,16 +43,16 @@
     </details>
   </div>
 </nav>
-    <main class="section-space">
+    <main class="py-5">
       <!-- Main content: sign-in form and account links. -->
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-7 col-lg-5">
-            <div class="content-card">
+            <div class="card p-4">
               <div class="text-center mb-4">
                 <div class="eyebrow mb-2">GOOD TO HAVE YOU BACK</div>
-                <h1 class="page-heading">Welcome back.</h1>
-                <p class="muted">Log in to your Forge account.</p>
+                <h1 class="display-4 fw-bold">Welcome back.</h1>
+                <p class="text-body-secondary">Log in to your Forge account.</p>
               </div>
               <form>
                 <div class="mb-3">
@@ -94,7 +94,7 @@
                     >Forgot password?</a
                   >
                 </div>
-                <button class="btn btn-dark w-100" type="button">Log in</button>
+                <button class="btn btn-primary w-100" type="button">Log in</button>
                 <div
                   class="alert alert-light border small mt-3 mb-0"
                   role="note"
@@ -102,9 +102,9 @@
                   Authentication is not connected; passwords are not checked.
                 </div>
               </form>
-              <p class="small text-center muted mt-4 mb-0">
+              <p class="small text-center text-body-secondary mt-4 mb-0">
                 New to Forge?
-                <a class="fw-bold text-dark" href="signup.html"
+                <a class="fw-bold text-white" href="signup.html"
                   >Create an account</a
                 >
               </p>
@@ -119,7 +119,7 @@
       <div class="col-md-6 col-lg-3">
         <a class="navbar-brand text-white" href="index.html"><span class="brand-mark">F</span><span>FORGE<span class="text-accent">.</span><span class="brand-caption">Gaming &amp; PC</span></span></a>
         <p class="small mt-3">PC hardware, gaming gear, and build inspiration.</p>
-        <p class="small muted mb-0">Lahore, Pakistan · Store details shown are placeholders.</p>
+        <p class="small text-body-secondary mb-0">Lahore, Pakistan · Store details shown are placeholders.</p>
       </div>
       <div class="col-6 col-lg-2">
         <h2>Shop</h2>

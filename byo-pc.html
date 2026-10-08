@@ -12,25 +12,25 @@
   </head>
 
   <body>
-    <nav class="site-nav">
-  <div class="container nav-wrap">
+    <nav class="site-nav sticky-top">
+  <div class="container d-flex align-items-center justify-content-between gap-3 py-2">
     <a class="navbar-brand" href="index.html" aria-label="Forge home">
       <span class="brand-mark">F</span>
       <span>FORGE<span class="text-accent">.</span><span class="brand-caption">Gaming &amp; PC</span></span>
     </a>
-    <div class="desktop-links" aria-label="Main navigation">
+    <div class="d-none d-lg-flex align-items-center gap-4" aria-label="Main navigation">
           <a class="site-link" href="index.html">Home</a>
           <a class="site-link" href="products.html">Shop</a>
           <a class="site-link site-link-builder active" href="byo-pc.html" aria-current="page">Build a PC</a>
           <a class="site-link" href="about.html">About</a>
           <a class="site-link" href="contact.html">Contact</a>
     </div>
-    <div class="nav-actions">
-      <a class="btn btn-quiet btn-sm" href="login.html">Account</a>
-      <a class="btn btn-accent btn-sm" href="cart.html">Cart</a>
+    <div class="d-none d-lg-flex align-items-center gap-2">
+      <a class="btn btn-outline-light btn-sm" href="login.html">Account</a>
+      <a class="btn btn-primary btn-sm" href="cart.html">Cart</a>
     </div>
-    <details class="mobile-menu">
-      <summary class="btn btn-quiet btn-sm"><span aria-hidden="true">☰</span> Menu</summary>
+    <details class="d-lg-none position-relative mobile-menu">
+      <summary class="btn btn-outline-light btn-sm"><span aria-hidden="true">☰</span> Menu</summary>
       <div class="mobile-menu-panel" aria-label="Mobile navigation">
             <a class="site-link" href="index.html">Home</a>
             <a class="site-link" href="products.html">Shop</a>
@@ -47,23 +47,23 @@
 
     <main>
       <!-- Main content: PC component selections and build summary. -->
-      <section class="section-space">
+      <section class="py-5">
         <div class="container">
           <div class="row g-4 align-items-end mb-5">
             <div class="col-lg-8">
               <div class="eyebrow mb-2">YOUR BUILD, YOUR RULES</div>
-              <h1 class="page-heading mb-3">
+              <h1 class="display-4 fw-bold mb-3">
                 Build Your Own PC <span class="text-success">/</span> BYO-PC
               </h1>
               <p class="h5 mb-2">Build Your Own PC</p>
-              <p class="lead muted mb-0">
+              <p class="lead text-body-secondary mb-0">
                 Pick the parts. Make it yours. Start with a component in each
                 category and create a PC that fits the way you play, work, and
                 create.
               </p>
             </div>
             <div class="col-lg-4 text-lg-end">
-              <span class="hero-tag">A BETTER BUILD STARTS WITH YOU</span>
+              <span class="badge rounded-pill bg-transparent border border-secondary-subtle hero-tag">A BETTER BUILD STARTS WITH YOU</span>
             </div>
           </div>
 
@@ -76,16 +76,16 @@
             <div class="col-lg-8">
               <form>
                 <section
-                  class="builder-card mb-3"
+                  class="card p-4 mb-3"
                   aria-labelledby="cpu-heading"
                 >
                   <div class="d-flex gap-3">
-                    <span class="builder-number">01</span>
+                    <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 rounded-3 bg-primary-subtle text-primary fw-bold builder-number">01</span>
                     <div class="flex-grow-1">
                       <h2 class="h5 mb-1" id="cpu-heading">
                         Choose your processor
                       </h2>
-                      <p class="small muted mb-3">
+                      <p class="small text-body-secondary mb-3">
                         Your CPU sets the pace for gaming and everyday tasks.
                       </p>
                       <label class="visually-hidden" for="cpu">Processor</label>
@@ -99,16 +99,16 @@
                 </section>
 
                 <section
-                  class="builder-card mb-3"
+                  class="card p-4 mb-3"
                   aria-labelledby="gpu-heading"
                 >
                   <div class="d-flex gap-3">
-                    <span class="builder-number">02</span>
+                    <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 rounded-3 bg-primary-subtle text-primary fw-bold builder-number">02</span>
                     <div class="flex-grow-1">
                       <h2 class="h5 mb-1" id="gpu-heading">
                         Choose your graphics card
                       </h2>
-                      <p class="small muted mb-3">
+                      <p class="small text-body-secondary mb-3">
                         Pick the graphics performance that matches your goals.
                       </p>
                       <label class="visually-hidden" for="gpu"
@@ -124,16 +124,16 @@
                 </section>
 
                 <section
-                  class="builder-card mb-3"
+                  class="card p-4 mb-3"
                   aria-labelledby="motherboard-heading"
                 >
                   <div class="d-flex gap-3">
-                    <span class="builder-number">03</span>
+                    <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 rounded-3 bg-primary-subtle text-primary fw-bold builder-number">03</span>
                     <div class="flex-grow-1">
                       <h2 class="h5 mb-1" id="motherboard-heading">
                         Choose your motherboard
                       </h2>
-                      <p class="small muted mb-3">
+                      <p class="small text-body-secondary mb-3">
                         The foundation that connects every component.
                       </p>
                       <label class="visually-hidden" for="motherboard"
@@ -153,16 +153,16 @@
                 </section>
 
                 <section
-                  class="builder-card mb-3"
+                  class="card p-4 mb-3"
                   aria-labelledby="memory-heading"
                 >
                   <div class="d-flex gap-3">
-                    <span class="builder-number">04</span>
+                    <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 rounded-3 bg-primary-subtle text-primary fw-bold builder-number">04</span>
                     <div class="flex-grow-1">
                       <h2 class="h5 mb-1" id="memory-heading">
                         Choose your memory
                       </h2>
-                      <p class="small muted mb-3">
+                      <p class="small text-body-secondary mb-3">
                         Fast DDR5 memory keeps multitasking smooth.
                       </p>
                       <label class="visually-hidden" for="memory">Memory</label>
@@ -176,16 +176,16 @@
                 </section>
 
                 <section
-                  class="builder-card mb-3"
+                  class="card p-4 mb-3"
                   aria-labelledby="storage-heading"
                 >
                   <div class="d-flex gap-3">
-                    <span class="builder-number">05</span>
+                    <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 rounded-3 bg-primary-subtle text-primary fw-bold builder-number">05</span>
                     <div class="flex-grow-1">
                       <h2 class="h5 mb-1" id="storage-heading">
                         Choose your storage
                       </h2>
-                      <p class="small muted mb-3">
+                      <p class="small text-body-secondary mb-3">
                         Make room for your games, apps, and projects.
                       </p>
                       <label class="visually-hidden" for="storage"
@@ -203,16 +203,16 @@
                 </section>
 
                 <section
-                  class="builder-card mb-3"
+                  class="card p-4 mb-3"
                   aria-labelledby="case-heading"
                 >
                   <div class="d-flex gap-3">
-                    <span class="builder-number">06</span>
+                    <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 rounded-3 bg-primary-subtle text-primary fw-bold builder-number">06</span>
                     <div class="flex-grow-1">
                       <h2 class="h5 mb-1" id="case-heading">
                         Choose your case
                       </h2>
-                      <p class="small muted mb-3">
+                      <p class="small text-body-secondary mb-3">
                         Find a home for your parts and your personal style.
                       </p>
                       <label class="visually-hidden" for="case">PC case</label>
@@ -226,16 +226,16 @@
                 </section>
 
                 <section
-                  class="builder-card mb-3"
+                  class="card p-4 mb-3"
                   aria-labelledby="psu-heading"
                 >
                   <div class="d-flex gap-3">
-                    <span class="builder-number">07</span>
+                    <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 rounded-3 bg-primary-subtle text-primary fw-bold builder-number">07</span>
                     <div class="flex-grow-1">
                       <h2 class="h5 mb-1" id="psu-heading">
                         Choose your power supply
                       </h2>
-                      <p class="small muted mb-3">
+                      <p class="small text-body-secondary mb-3">
                         Reliable power for every part in your build.
                       </p>
                       <label class="visually-hidden" for="psu"
@@ -251,16 +251,16 @@
                 </section>
 
                 <section
-                  class="builder-card mb-4"
+                  class="card p-4 mb-4"
                   aria-labelledby="cooler-heading"
                 >
                   <div class="d-flex gap-3">
-                    <span class="builder-number">08</span>
+                    <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 rounded-3 bg-primary-subtle text-primary fw-bold builder-number">08</span>
                     <div class="flex-grow-1">
                       <h2 class="h5 mb-1" id="cooler-heading">
                         Choose your CPU cooler
                       </h2>
-                      <p class="small muted mb-3">
+                      <p class="small text-body-secondary mb-3">
                         Check socket support, case clearance, and radiator space
                         for your chosen cooler.
                       </p>
@@ -276,17 +276,17 @@
                   </div>
                 </section>
 
-                <a class="btn btn-outline-dark" href="products.html"
+                <a class="btn btn-outline-light" href="products.html"
                   >Browse all components</a
                 >
               </form>
             </div>
 
             <aside class="col-lg-4" aria-label="Build summary">
-              <div class="content-card builder-summary">
+              <div class="card p-4">
                 <span class="badge badge-soft mb-3">BUILD SUMMARY</span>
                 <h2 class="h4 mb-2">Selected components</h2>
-                <p class="small muted">
+                <p class="small text-body-secondary">
                   Illustrative selections and estimates. Changing the selectors
                   will not update this summary.
                 </p>
@@ -318,7 +318,7 @@
                     <span>Case · Mid tower</span><span>Rs. 49,999</span>
                   </li>
                 </ul>
-                <div class="builder-status my-3">
+                <div class="card p-3 my-3">
                   <div
                     class="d-flex justify-content-between align-items-center gap-2"
                   >
@@ -337,25 +337,25 @@
                   class="d-flex justify-content-between align-items-center mb-3 gap-2"
                 >
                   <span class="fw-bold">Build total (estimate)</span>
-                  <strong class="order-total">Rs. 584,992</strong>
+                  <strong class="fw-bold fs-4">Rs. 584,992</strong>
                 </div>
-                <p class="small muted">
+                <p class="small text-body-secondary">
                   *Illustrative estimate only. It does not change with selector
                   choices.
                 </p>
                 <div class="d-grid gap-2">
-                  <button class="btn btn-outline-dark" type="button">
+                  <button class="btn btn-outline-light" type="button">
                     Clear Build
                   </button>
                   <button
-                    class="btn btn-dark"
+                    class="btn btn-primary"
                     type="button"
                     aria-describedby="save-build-note"
                   >
                     Save Build
                   </button>
                 </div>
-                <p class="small muted mt-2" id="save-build-note">
+                <p class="small text-body-secondary mt-2" id="save-build-note">
                   Selections do not update or save the build.
                 </p>
                 <hr />
@@ -363,28 +363,28 @@
                   Compatibility relationships
                 </h3>
                 <div class="d-grid gap-2 small mb-3">
-                  <div class="compatibility-pair">
+                  <div class="d-flex align-items-center justify-content-between gap-2 p-2 border rounded-2 bg-body compatibility-pair">
                     CPU socket <span aria-hidden="true">↔</span> motherboard
                     socket
                   </div>
-                  <div class="compatibility-pair">
+                  <div class="d-flex align-items-center justify-content-between gap-2 p-2 border rounded-2 bg-body compatibility-pair">
                     RAM type <span aria-hidden="true">↔</span> motherboard
                     support
                   </div>
-                  <div class="compatibility-pair">
+                  <div class="d-flex align-items-center justify-content-between gap-2 p-2 border rounded-2 bg-body compatibility-pair">
                     GPU interface and size
                     <span aria-hidden="true">↔</span> board and case clearance
                   </div>
-                  <div class="compatibility-pair">
+                  <div class="d-flex align-items-center justify-content-between gap-2 p-2 border rounded-2 bg-body compatibility-pair">
                     PSU capacity and connectors
                     <span aria-hidden="true">↔</span> full system
                   </div>
-                  <div class="compatibility-pair">
+                  <div class="d-flex align-items-center justify-content-between gap-2 p-2 border rounded-2 bg-body compatibility-pair">
                     Cooler socket and radiator
                     <span aria-hidden="true">↔</span> board and case
                   </div>
                 </div>
-                <a class="btn btn-outline-dark w-100" href="contact.html">
+                <a class="btn btn-outline-light w-100" href="contact.html">
                   Ask about your build
                 </a>
               </div>
@@ -400,7 +400,7 @@
       <div class="col-md-6 col-lg-3">
         <a class="navbar-brand text-white" href="index.html"><span class="brand-mark">F</span><span>FORGE<span class="text-accent">.</span><span class="brand-caption">Gaming &amp; PC</span></span></a>
         <p class="small mt-3">PC hardware, gaming gear, and build inspiration.</p>
-        <p class="small muted mb-0">Lahore, Pakistan · Store details shown are placeholders.</p>
+        <p class="small text-body-secondary mb-0">Lahore, Pakistan · Store details shown are placeholders.</p>
       </div>
       <div class="col-6 col-lg-2">
         <h2>Shop</h2>

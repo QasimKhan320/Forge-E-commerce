@@ -18,8 +18,8 @@
     <div class="promo-strip text-center py-2">
       Gaming hardware and custom PC builds, all in one place.
     </div>
-    <nav class="site-nav">
-      <div class="container nav-wrap">
+    <nav class="site-nav sticky-top">
+      <div class="container d-flex align-items-center justify-content-between gap-3 py-2">
         <a class="navbar-brand" href="index.html" aria-label="Forge home">
           <span class="brand-mark">F</span>
           <span
@@ -27,7 +27,7 @@
             ><span class="brand-caption">Gaming & PC</span></span
           >
         </a>
-        <div class="desktop-links" aria-label="Main navigation">
+        <div class="d-none d-lg-flex align-items-center gap-4" aria-label="Main navigation">
           <a
             class="site-link active"
             href="index.html"
@@ -41,12 +41,12 @@
           <a class="site-link" href="about.html">About</a>
           <a class="site-link" href="contact.html">Contact</a>
         </div>
-        <div class="nav-actions">
-          <a class="btn btn-quiet btn-sm" href="login.html">Account</a>
-          <a class="btn btn-accent btn-sm" href="cart.html">Cart</a>
+        <div class="d-none d-lg-flex align-items-center gap-2">
+          <a class="btn btn-outline-light btn-sm" href="login.html">Account</a>
+          <a class="btn btn-primary btn-sm" href="cart.html">Cart</a>
         </div>
-        <details class="mobile-menu">
-          <summary class="btn btn-quiet btn-sm">
+        <details class="d-lg-none position-relative mobile-menu">
+          <summary class="btn btn-outline-light btn-sm">
             <span aria-hidden="true">☰</span> Menu
           </summary>
           <div class="mobile-menu-panel" aria-label="Mobile navigation">
@@ -71,52 +71,52 @@
       <!-- Homepage sections introduce the store, categories, and featured gear. -->
       <section class="hero">
         <div class="container hero-content">
-          <div class="hero-copy">
-              <span class="hero-tag mb-4">YOUR NEXT LEVEL STARTS HERE</span>
-              <h1 class="display-title mb-4">
+          <div class="hero-copy py-5">
+              <span class="badge rounded-pill bg-transparent border border-secondary-subtle hero-tag mb-4">YOUR NEXT LEVEL STARTS HERE</span>
+              <h1 class="display-1 fw-bold mb-4">
                 Gear up.<br />Play <span class="text-accent">bigger.</span>
               </h1>
-              <p class="lead muted mb-4">
+              <p class="lead text-body-secondary mb-4">
                 Find your next gaming laptop, monitor, PC component, or
                 everyday upgrade in one carefully curated store.
               </p>
               <div class="d-flex flex-wrap gap-2">
-                <a class="btn btn-accent" href="products.html"
+                <a class="btn btn-primary" href="products.html"
                   >Shop gaming gear <span aria-hidden="true">→</span></a
                 >
-                <a class="btn btn-quiet" href="byo-pc.html">Build a PC</a>
+                <a class="btn btn-outline-light" href="byo-pc.html">Build a PC</a>
               </div>
-              <p class="small muted mt-4 mb-0">
+              <p class="small text-body-secondary mt-4 mb-0">
                 Gaming PCs · Components · Monitors · Accessories
               </p>
           </div>
         </div>
       </section>
 
-      <section class="trust-strip py-3">
+      <section class="trust-strip border-top border-bottom py-3">
         <div class="container">
           <div class="row g-3">
             <div class="col-6 col-lg-3">
-              <div class="trust-item">
-                <span class="trust-icon" aria-hidden="true">▣</span>
+              <div class="d-flex align-items-center gap-2 fw-semibold small text-body-secondary">
+                <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 rounded-3 bg-primary-subtle text-primary trust-icon" aria-hidden="true">▣</span>
                 <span>PCs & gaming laptops</span>
               </div>
             </div>
             <div class="col-6 col-lg-3">
-              <div class="trust-item">
-                <span class="trust-icon" aria-hidden="true">⌘</span>
+              <div class="d-flex align-items-center gap-2 fw-semibold small text-body-secondary">
+                <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 rounded-3 bg-primary-subtle text-primary trust-icon" aria-hidden="true">⌘</span>
                 <span>Build your own setup</span>
               </div>
             </div>
             <div class="col-6 col-lg-3">
-              <div class="trust-item">
-                <span class="trust-icon" aria-hidden="true">◉</span>
+              <div class="d-flex align-items-center gap-2 fw-semibold small text-body-secondary">
+                <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 rounded-3 bg-primary-subtle text-primary trust-icon" aria-hidden="true">◉</span>
                 <span>Displays & peripherals</span>
               </div>
             </div>
             <div class="col-6 col-lg-3">
-              <div class="trust-item">
-                <span class="trust-icon" aria-hidden="true">↗</span>
+              <div class="d-flex align-items-center gap-2 fw-semibold small text-body-secondary">
+                <span class="d-inline-flex align-items-center justify-content-center flex-shrink-0 rounded-3 bg-primary-subtle text-primary trust-icon" aria-hidden="true">↗</span>
                 <span>Shop across Pakistan</span>
               </div>
             </div>
@@ -124,12 +124,12 @@
         </div>
       </section>
 
-      <section class="section-space">
+      <section class="py-5">
         <div class="container">
-          <div class="section-heading">
+          <div class="d-flex flex-column flex-md-row align-items-md-end justify-content-between gap-3 mb-4">
             <div>
               <div class="eyebrow mb-2">EXPLORE THE STORE</div>
-              <h2 class="page-heading mb-0">Find your kind of gear.</h2>
+              <h2 class="display-4 fw-bold mb-0">Find your kind of gear.</h2>
             </div>
             <a class="fw-bold" href="products.html#gaming-pcs"
               >Browse all categories <span aria-hidden="true">→</span></a
@@ -137,73 +137,73 @@
           </div>
           <div class="row g-3">
             <div class="col-6 col-lg-3">
-              <a class="category-tile" href="products.html#gaming-pcs">
-                <span class="category-icon" aria-hidden="true">▣</span>
+              <a class="category-tile d-flex flex-column justify-content-between h-100 p-4 rounded-4 border" href="products.html#gaming-pcs">
+                <span class="fs-1 text-primary category-icon" aria-hidden="true">▣</span>
                 <span>
-                  <span class="d-block product-meta">READY TO PLAY</span>
+                  <span class="d-block small text-body-secondary">READY TO PLAY</span>
                   <strong>Gaming PCs</strong>
                 </span>
               </a>
             </div>
             <div class="col-6 col-lg-3">
-              <a class="category-tile" href="products.html#laptops">
-                <span class="category-icon" aria-hidden="true">▱</span>
+              <a class="category-tile d-flex flex-column justify-content-between h-100 p-4 rounded-4 border" href="products.html#laptops">
+                <span class="fs-1 text-primary category-icon" aria-hidden="true">▱</span>
                 <span>
-                  <span class="d-block product-meta">POWER ON THE GO</span>
+                  <span class="d-block small text-body-secondary">POWER ON THE GO</span>
                   <strong>Gaming laptops</strong>
                 </span>
               </a>
             </div>
             <div class="col-6 col-lg-3">
-              <a class="category-tile" href="products.html#monitors">
-                <span class="category-icon" aria-hidden="true">▭</span>
+              <a class="category-tile d-flex flex-column justify-content-between h-100 p-4 rounded-4 border" href="products.html#monitors">
+                <span class="fs-1 text-primary category-icon" aria-hidden="true">▭</span>
                 <span>
-                  <span class="d-block product-meta">SEE EVERY FRAME</span>
+                  <span class="d-block small text-body-secondary">SEE EVERY FRAME</span>
                   <strong>Monitors</strong>
                 </span>
               </a>
             </div>
             <div class="col-6 col-lg-3">
-              <a class="category-tile" href="products.html#components">
-                <span class="category-icon" aria-hidden="true">◈</span>
+              <a class="category-tile d-flex flex-column justify-content-between h-100 p-4 rounded-4 border" href="products.html#components">
+                <span class="fs-1 text-primary category-icon" aria-hidden="true">◈</span>
                 <span>
-                  <span class="d-block product-meta">MAKE IT YOURS</span>
+                  <span class="d-block small text-body-secondary">MAKE IT YOURS</span>
                   <strong>PC components</strong>
                 </span>
               </a>
             </div>
             <div class="col-6 col-lg-3">
-              <a class="category-tile" href="products.html#peripherals">
-                <span class="category-icon" aria-hidden="true">⌨</span>
+              <a class="category-tile d-flex flex-column justify-content-between h-100 p-4 rounded-4 border" href="products.html#peripherals">
+                <span class="fs-1 text-primary category-icon" aria-hidden="true">⌨</span>
                 <span>
-                  <span class="d-block product-meta">YOUR CONTROL</span>
+                  <span class="d-block small text-body-secondary">YOUR CONTROL</span>
                   <strong>Keyboards & mice</strong>
                 </span>
               </a>
             </div>
             <div class="col-6 col-lg-3">
-              <a class="category-tile" href="products.html#audio">
-                <span class="category-icon" aria-hidden="true">♫</span>
+              <a class="category-tile d-flex flex-column justify-content-between h-100 p-4 rounded-4 border" href="products.html#audio">
+                <span class="fs-1 text-primary category-icon" aria-hidden="true">♫</span>
                 <span>
-                  <span class="d-block product-meta">HEAR IT ALL</span>
+                  <span class="d-block small text-body-secondary">HEAR IT ALL</span>
                   <strong>Gaming audio</strong>
                 </span>
               </a>
             </div>
             <div class="col-6 col-lg-3">
-              <a class="category-tile" href="products.html#chairs">
-                <span class="category-icon" aria-hidden="true">▤</span>
+              <a class="category-tile d-flex flex-column justify-content-between h-100 p-4 rounded-4 border" href="products.html#chairs">
+                <span class="fs-1 text-primary category-icon" aria-hidden="true">▤</span>
                 <span>
-                  <span class="d-block product-meta">SETTLE IN</span>
+                  <span class="d-block small text-body-secondary">SETTLE IN</span>
                   <strong>Chairs & desks</strong>
                 </span>
               </a>
             </div>
             <div class="col-6 col-lg-3">
-              <a class="category-tile" href="products.html#accessories">
-                <span class="category-icon" aria-hidden="true">✳</span>
+              <a class="category-tile d-flex flex-column justify-content-between h-100 p-4 rounded-4 border" href="products.html#accessories">
+                <span class="fs-1 text-primary category-icon" aria-hidden="true">✳</span>
                 <span>
-                  <span class="d-block product-meta">THE LITTLE EXTRAS</span>
+                  <span class="d-block small text-body-secondary">THE LITTLE EXTRAS</span>
                   <strong>Accessories</strong>
                 </span>
               </a>
@@ -212,12 +212,12 @@
         </div>
       </section>
 
-      <section class="section-tight" id="featured">
+      <section class="py-4" id="featured">
         <div class="container">
-          <div class="section-heading">
+          <div class="d-flex flex-column flex-md-row align-items-md-end justify-content-between gap-3 mb-4">
             <div>
               <div class="eyebrow mb-2">A FEW GOOD PICKS</div>
-              <h2 class="page-heading mb-0">Featured gear.</h2>
+              <h2 class="display-4 fw-bold mb-0">Featured gear.</h2>
             </div>
             <a class="fw-bold" href="products.html"
               >See all products <span aria-hidden="true">→</span></a
@@ -225,23 +225,23 @@
           </div>
           <div class="row g-4">
             <div class="col-sm-6 col-lg-3">
-              <article class="product-card">
+              <article class="card h-100 product-card">
                 <a href="product-details.html">
                   <img
-                    class="product-image"
+                    class="product-image w-100 object-fit-cover"
                     src="https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=850&q=80"
                     alt="Discrete graphics card for a custom desktop PC"
                   />
                 </a>
-                <div class="product-body">
+                <div class="card-body p-3">
                   <span class="badge badge-soft mb-2">GRAPHICS</span>
                   <a href="product-details.html">
-                    <h3 class="product-title">GeForce RTX 4070 12GB</h3>
+                    <h3 class="h6 fw-semibold product-title">GeForce RTX 4070 12GB</h3>
                   </a>
-                  <p class="product-meta">12GB GDDR6X · PCIe 4.0 x16</p>
+                  <p class="small text-body-secondary">12GB GDDR6X · PCIe 4.0 x16</p>
                   <div class="d-flex align-items-center justify-content-between gap-2">
-                    <span class="price">Rs. 189,999</span>
-                    <a class="btn btn-quiet btn-sm" href="product-details.html"
+                    <span class="price fw-bold fs-5">Rs. 189,999</span>
+                    <a class="btn btn-outline-light btn-sm" href="product-details.html"
                       >View</a
                     >
                   </div>
@@ -249,23 +249,23 @@
               </article>
             </div>
             <div class="col-sm-6 col-lg-3">
-              <article class="product-card">
+              <article class="card h-100 product-card">
                 <a href="product-details.html">
                   <img
-                    class="product-image"
+                    class="product-image w-100 object-fit-cover"
                     src="https://images.unsplash.com/photo-1555617981-dac3880eac6e?auto=format&fit=crop&w=850&q=80"
                     alt="Desktop processor component"
                   />
                 </a>
-                <div class="product-body">
+                <div class="card-body p-3">
                   <span class="badge badge-soft mb-2">PROCESSOR</span>
                   <a href="product-details.html">
-                    <h3 class="product-title">AMD Ryzen 7 7800X3D</h3>
+                    <h3 class="h6 fw-semibold product-title">AMD Ryzen 7 7800X3D</h3>
                   </a>
-                  <p class="product-meta">8 cores · Socket AM5</p>
+                  <p class="small text-body-secondary">8 cores · Socket AM5</p>
                   <div class="d-flex align-items-center justify-content-between gap-2">
-                    <span class="price">Rs. 119,999</span>
-                    <a class="btn btn-quiet btn-sm" href="product-details.html"
+                    <span class="price fw-bold fs-5">Rs. 119,999</span>
+                    <a class="btn btn-outline-light btn-sm" href="product-details.html"
                       >View</a
                     >
                   </div>
@@ -273,23 +273,23 @@
               </article>
             </div>
             <div class="col-sm-6 col-lg-3">
-              <article class="product-card">
+              <article class="card h-100 product-card">
                 <a href="product-details.html">
                   <img
-                    class="product-image"
+                    class="product-image w-100 object-fit-cover"
                     src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=850&q=80"
                     alt="Gaming monitor on a desk"
                   />
                 </a>
-                <div class="product-body">
+                <div class="card-body p-3">
                   <span class="badge badge-soft mb-2">DISPLAY</span>
                   <a href="product-details.html">
-                    <h3 class="product-title">27-inch QHD Gaming Monitor</h3>
+                    <h3 class="h6 fw-semibold product-title">27-inch QHD Gaming Monitor</h3>
                   </a>
-                  <p class="product-meta">1440p · High refresh rate</p>
+                  <p class="small text-body-secondary">1440p · High refresh rate</p>
                   <div class="d-flex align-items-center justify-content-between gap-2">
-                    <span class="price">Rs. 89,999</span>
-                    <a class="btn btn-quiet btn-sm" href="product-details.html"
+                    <span class="price fw-bold fs-5">Rs. 89,999</span>
+                    <a class="btn btn-outline-light btn-sm" href="product-details.html"
                       >View</a
                     >
                   </div>
@@ -297,23 +297,23 @@
               </article>
             </div>
             <div class="col-sm-6 col-lg-3">
-              <article class="product-card">
+              <article class="card h-100 product-card">
                 <a href="product-details.html">
                   <img
-                    class="product-image"
+                    class="product-image w-100 object-fit-cover"
                     src="https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=850&q=80"
                     alt="Gaming mouse with ergonomic shape"
                   />
                 </a>
-                <div class="product-body">
+                <div class="card-body p-3">
                   <span class="badge badge-soft mb-2">PERIPHERALS</span>
                   <a href="product-details.html">
-                    <h3 class="product-title">Wireless Gaming Mouse</h3>
+                    <h3 class="h6 fw-semibold product-title">Wireless Gaming Mouse</h3>
                   </a>
-                  <p class="product-meta">Ergonomic · Adjustable DPI</p>
+                  <p class="small text-body-secondary">Ergonomic · Adjustable DPI</p>
                   <div class="d-flex align-items-center justify-content-between gap-2">
-                    <span class="price">Rs. 12,999</span>
-                    <a class="btn btn-quiet btn-sm" href="product-details.html"
+                    <span class="price fw-bold fs-5">Rs. 12,999</span>
+                    <a class="btn btn-outline-light btn-sm" href="product-details.html"
                       >View</a
                     >
                   </div>
@@ -321,25 +321,25 @@
               </article>
             </div>
           </div>
-          <p class="price-note mt-3 mb-0">
+          <p class="small text-body-secondary mt-3 mb-0">
             Product details and prices should be confirmed before purchase.
           </p>
         </div>
       </section>
 
-      <section class="section-space">
+      <section class="py-5">
         <div class="container">
-          <div class="deal-banner row align-items-center g-0">
+          <div class="deal-banner border rounded-4 overflow-hidden row align-items-center g-0">
             <div class="col-lg-8 p-4 p-lg-5">
               <div class="eyebrow mb-2">CUSTOM BUILD, YOUR WAY</div>
-              <h2 class="page-heading mb-3">From parts to your perfect rig.</h2>
-              <p class="muted mb-0">
+              <h2 class="display-4 fw-bold mb-3">From parts to your perfect rig.</h2>
+              <p class="text-body-secondary mb-0">
                 Choose the components, shape the performance, and plan a setup
                 that feels like yours.
               </p>
             </div>
             <div class="col-lg-4 p-4 p-lg-5 text-lg-end">
-              <a class="btn btn-accent" href="byo-pc.html"
+              <a class="btn btn-primary" href="byo-pc.html"
                 >Build a PC <span aria-hidden="true">→</span></a
               >
             </div>
@@ -362,7 +362,7 @@
             <p class="small mt-3">
               PC hardware, gaming gear, and build inspiration.
             </p>
-            <p class="small muted mb-0">
+            <p class="small text-body-secondary mb-0">
               Lahore, Pakistan · Store details shown are placeholders.
             </p>
           </div>

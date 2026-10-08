@@ -11,25 +11,25 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="site-nav">
-  <div class="container nav-wrap">
+    <nav class="site-nav sticky-top">
+  <div class="container d-flex align-items-center justify-content-between gap-3 py-2">
     <a class="navbar-brand" href="index.html" aria-label="Forge home">
       <span class="brand-mark">F</span>
       <span>FORGE<span class="text-accent">.</span><span class="brand-caption">Gaming &amp; PC</span></span>
     </a>
-    <div class="desktop-links" aria-label="Main navigation">
+    <div class="d-none d-lg-flex align-items-center gap-4" aria-label="Main navigation">
           <a class="site-link" href="index.html">Home</a>
           <a class="site-link" href="products.html">Shop</a>
           <a class="site-link site-link-builder" href="byo-pc.html">Build a PC</a>
           <a class="site-link" href="about.html">About</a>
           <a class="site-link" href="contact.html">Contact</a>
     </div>
-    <div class="nav-actions">
-      <a class="btn btn-quiet btn-sm" href="login.html">Account</a>
-      <a class="btn btn-accent btn-sm" href="cart.html">Cart</a>
+    <div class="d-none d-lg-flex align-items-center gap-2">
+      <a class="btn btn-outline-light btn-sm" href="login.html">Account</a>
+      <a class="btn btn-primary btn-sm" href="cart.html">Cart</a>
     </div>
-    <details class="mobile-menu">
-      <summary class="btn btn-quiet btn-sm"><span aria-hidden="true">☰</span> Menu</summary>
+    <details class="d-lg-none position-relative mobile-menu">
+      <summary class="btn btn-outline-light btn-sm"><span aria-hidden="true">☰</span> Menu</summary>
       <div class="mobile-menu-panel" aria-label="Mobile navigation">
             <a class="site-link" href="index.html">Home</a>
             <a class="site-link" href="products.html">Shop</a>
@@ -43,16 +43,16 @@
     </details>
   </div>
 </nav>
-    <main class="section-space">
+    <main class="py-5">
       <!-- Main content: new-account registration form. -->
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8">
-            <div class="content-card">
+            <div class="card p-4">
               <div class="text-center mb-4">
                 <div class="eyebrow mb-2">JOIN THE COMMUNITY</div>
-                <h1 class="page-heading">Create your account.</h1>
-                <p class="muted">
+                <h1 class="display-4 fw-bold">Create your account.</h1>
+                <p class="text-body-secondary">
                   Keep track of orders and save your favourite parts.
                 </p>
               </div>
@@ -166,13 +166,13 @@
                     </div>
                   </div>
                   <div class="col-12">
-                    <button class="btn btn-dark w-100" type="button">
+                    <button class="btn btn-primary w-100" type="button">
                       Create account
                     </button>
-                    <p class="small text-center muted mt-3 mb-0">
+                    <p class="small text-center text-body-secondary mt-3 mb-0">
                       Account creation is unavailable from this page. Already
                       have an account?
-                      <a class="fw-bold text-dark" href="login.html">Log in</a>
+                      <a class="fw-bold text-white" href="login.html">Log in</a>
                     </p>
                   </div>
                 </div>
@@ -188,7 +188,7 @@
       <div class="col-md-6 col-lg-3">
         <a class="navbar-brand text-white" href="index.html"><span class="brand-mark">F</span><span>FORGE<span class="text-accent">.</span><span class="brand-caption">Gaming &amp; PC</span></span></a>
         <p class="small mt-3">PC hardware, gaming gear, and build inspiration.</p>
-        <p class="small muted mb-0">Lahore, Pakistan · Store details shown are placeholders.</p>
+        <p class="small text-body-secondary mb-0">Lahore, Pakistan · Store details shown are placeholders.</p>
       </div>
       <div class="col-6 col-lg-2">
         <h2>Shop</h2>

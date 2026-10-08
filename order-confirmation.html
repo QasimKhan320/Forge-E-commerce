@@ -11,25 +11,25 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="site-nav">
-  <div class="container nav-wrap">
+    <nav class="site-nav sticky-top">
+  <div class="container d-flex align-items-center justify-content-between gap-3 py-2">
     <a class="navbar-brand" href="index.html" aria-label="Forge home">
       <span class="brand-mark">F</span>
       <span>FORGE<span class="text-accent">.</span><span class="brand-caption">Gaming &amp; PC</span></span>
     </a>
-    <div class="desktop-links" aria-label="Main navigation">
+    <div class="d-none d-lg-flex align-items-center gap-4" aria-label="Main navigation">
           <a class="site-link" href="index.html">Home</a>
           <a class="site-link" href="products.html">Shop</a>
           <a class="site-link site-link-builder" href="byo-pc.html">Build a PC</a>
           <a class="site-link" href="about.html">About</a>
           <a class="site-link" href="contact.html">Contact</a>
     </div>
-    <div class="nav-actions">
-      <a class="btn btn-quiet btn-sm" href="login.html">Account</a>
-      <a class="btn btn-accent btn-sm" href="cart.html">Cart</a>
+    <div class="d-none d-lg-flex align-items-center gap-2">
+      <a class="btn btn-outline-light btn-sm" href="login.html">Account</a>
+      <a class="btn btn-primary btn-sm" href="cart.html">Cart</a>
     </div>
-    <details class="mobile-menu">
-      <summary class="btn btn-quiet btn-sm"><span aria-hidden="true">☰</span> Menu</summary>
+    <details class="d-lg-none position-relative mobile-menu">
+      <summary class="btn btn-outline-light btn-sm"><span aria-hidden="true">☰</span> Menu</summary>
       <div class="mobile-menu-panel" aria-label="Mobile navigation">
             <a class="site-link" href="index.html">Home</a>
             <a class="site-link" href="products.html">Shop</a>
@@ -43,12 +43,12 @@
     </details>
   </div>
 </nav>
-    <main class="section-space">
+    <main class="py-5">
       <!-- Main content: sample confirmation status and order summary. -->
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-7">
-            <div class="content-card text-center">
+            <div class="card p-4 text-center">
               <div
                 class="icon-box mx-auto mb-4"
                 style="width: 64px; height: 64px; font-size: 1.7rem"
@@ -56,16 +56,16 @@
                 ✓
               </div>
               <div class="eyebrow mb-2">ORDER PREVIEW FG-261001</div>
-              <h1 class="page-heading mb-3">Order preview complete.</h1>
-              <p class="lead muted">Your order summary is ready to review.</p>
+              <h1 class="display-4 fw-bold mb-3">Order preview complete.</h1>
+              <p class="lead text-body-secondary">Your order summary is ready to review.</p>
               <div class="alert alert-light border text-start my-4">
                 <div class="d-flex justify-content-between">
-                  <span class="muted">Email notice</span
+                  <span class="text-body-secondary">Email notice</span
                   ><strong>No email will be sent</strong>
                 </div>
                 <hr />
                 <div class="d-flex justify-content-between">
-                  <span class="muted">Delivery estimate</span
+                  <span class="text-body-secondary">Delivery estimate</span
                   ><strong>Confirm with the seller</strong>
                 </div>
               </div>
@@ -91,12 +91,12 @@
                 </div>
               </div>
               <div class="d-flex gap-2 justify-content-center flex-wrap">
-                <a class="btn btn-dark" href="orders.html">View my orders</a
-                ><a class="btn btn-outline-dark" href="products.html"
+                <a class="btn btn-primary" href="orders.html">View my orders</a
+                ><a class="btn btn-outline-light" href="products.html"
                   >Keep shopping</a
                 >
               </div>
-              <p class="small muted mt-4 mb-0">
+              <p class="small text-body-secondary mt-4 mb-0">
                 No order or payment was processed.
               </p>
             </div>
@@ -110,7 +110,7 @@
       <div class="col-md-6 col-lg-3">
         <a class="navbar-brand text-white" href="index.html"><span class="brand-mark">F</span><span>FORGE<span class="text-accent">.</span><span class="brand-caption">Gaming &amp; PC</span></span></a>
         <p class="small mt-3">PC hardware, gaming gear, and build inspiration.</p>
-        <p class="small muted mb-0">Lahore, Pakistan · Store details shown are placeholders.</p>
+        <p class="small text-body-secondary mb-0">Lahore, Pakistan · Store details shown are placeholders.</p>
       </div>
       <div class="col-6 col-lg-2">
         <h2>Shop</h2>

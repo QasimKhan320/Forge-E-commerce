@@ -11,25 +11,25 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="site-nav">
-  <div class="container nav-wrap">
+    <nav class="site-nav sticky-top">
+  <div class="container d-flex align-items-center justify-content-between gap-3 py-2">
     <a class="navbar-brand" href="index.html" aria-label="Forge home">
       <span class="brand-mark">F</span>
       <span>FORGE<span class="text-accent">.</span><span class="brand-caption">Gaming &amp; PC</span></span>
     </a>
-    <div class="desktop-links" aria-label="Main navigation">
+    <div class="d-none d-lg-flex align-items-center gap-4" aria-label="Main navigation">
           <a class="site-link" href="index.html">Home</a>
           <a class="site-link" href="products.html">Shop</a>
           <a class="site-link site-link-builder" href="byo-pc.html">Build a PC</a>
           <a class="site-link" href="about.html">About</a>
           <a class="site-link" href="contact.html">Contact</a>
     </div>
-    <div class="nav-actions">
-      <a class="btn btn-quiet btn-sm" href="login.html">Account</a>
-      <a class="btn btn-accent btn-sm" href="cart.html">Cart</a>
+    <div class="d-none d-lg-flex align-items-center gap-2">
+      <a class="btn btn-outline-light btn-sm" href="login.html">Account</a>
+      <a class="btn btn-primary btn-sm" href="cart.html">Cart</a>
     </div>
-    <details class="mobile-menu">
-      <summary class="btn btn-quiet btn-sm"><span aria-hidden="true">☰</span> Menu</summary>
+    <details class="d-lg-none position-relative mobile-menu">
+      <summary class="btn btn-outline-light btn-sm"><span aria-hidden="true">☰</span> Menu</summary>
       <div class="mobile-menu-panel" aria-label="Mobile navigation">
             <a class="site-link" href="index.html">Home</a>
             <a class="site-link" href="products.html">Shop</a>
@@ -45,36 +45,36 @@
 </nav>
     <main>
       <!-- Main content: product gallery, specifications, and purchase details. -->
-      <section class="section-space">
+      <section class="py-5">
         <div class="container">
-          <div class="small muted mb-4">
+          <div class="small text-body-secondary mb-4">
             <a href="products.html">Shop</a> / Graphics cards / GeForce RTX 4070
           </div>
-          <div class="row g-5">
+          <div class="row g-4">
             <div class="col-lg-6">
               <img
-                class="details-image"
+                class="details-image img-fluid rounded-4 object-fit-cover w-100"
                 src="https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=1200&q=85"
                 alt="GeForce RTX 4070 12GB graphics card"
               />
               <div class="row g-3 mt-1">
                 <div class="col-4">
                   <img
-                    class="product-image rounded-3"
+                    class="product-image w-100 object-fit-cover rounded-3"
                     src="https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=500&q=80"
                     alt="Graphics card detail view"
                   />
                 </div>
                 <div class="col-4">
                   <img
-                    class="product-image rounded-3"
+                    class="product-image w-100 object-fit-cover rounded-3"
                     src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=500&q=80"
                     alt="Graphics card installed in PC"
                   />
                 </div>
                 <div class="col-4">
                   <img
-                    class="product-image rounded-3"
+                    class="product-image w-100 object-fit-cover rounded-3"
                     src="https://images.unsplash.com/photo-1587202372634-32705e3bf49c?auto=format&fit=crop&w=500&q=80"
                     alt="PC build featuring high-end components"
                   />
@@ -85,9 +85,9 @@
               <span class="badge badge-soft mb-3"
                 >GRAPHICS CARD</span
               >
-              <h1 class="page-heading">GeForce RTX 4070 12GB</h1>
-              <p class="price fs-3">Rs. 189,999</p>
-              <p class="muted">
+              <h1 class="display-4 fw-bold">GeForce RTX 4070 12GB</h1>
+              <p class="price fw-bold fs-3">Rs. 189,999</p>
+              <p class="text-body-secondary">
                 A powerful, efficient GPU for high-refresh 1440p gaming and
                 creative work. Enjoy ray tracing, AI-powered frame generation
                 and quiet, cool performance in your next build.
@@ -95,33 +95,33 @@
               <hr />
               <div class="row g-3 mb-4">
                 <div class="col-6">
-                  <div class="small muted">MEMORY</div>
+                  <div class="small text-body-secondary">MEMORY</div>
                   <strong>12GB GDDR6X</strong>
                 </div>
                 <div class="col-6">
-                  <div class="small muted">INTERFACE</div>
+                  <div class="small text-body-secondary">INTERFACE</div>
                   <strong>PCIe 4.0 x16</strong>
                 </div>
                 <div class="col-6">
-                  <div class="small muted">RECOMMENDED PSU</div>
+                  <div class="small text-body-secondary">RECOMMENDED PSU</div>
                   <strong>650W</strong>
                 </div>
                 <div class="col-6">
-                  <div class="small muted">WARRANTY</div>
+                  <div class="small text-body-secondary">WARRANTY</div>
                   <strong>Check exact card model</strong>
                 </div>
               </div>
               <div class="d-flex gap-2">
-                <a class="btn btn-dark flex-grow-1" href="cart.html"
+                <a class="btn btn-primary flex-grow-1" href="cart.html"
                   >Add to cart — Rs. 189,999</a
                 ><a
-                  class="btn btn-outline-dark"
+                  class="btn btn-outline-light"
                   href="login.html"
                   aria-label="Add to wishlist"
                   >♡</a
                 >
               </div>
-              <p class="small muted mt-3">
+              <p class="small text-body-secondary mt-3">
                 Confirm the exact model, local availability, delivery, and
                 warranty details before purchase.
               </p>
@@ -130,14 +130,14 @@
           <div class="row mt-5">
             <div class="col-lg-8">
               <h2 class="h3">Made for the next level.</h2>
-              <p class="muted">
+              <p class="text-body-secondary">
                 Get exceptional performance for modern games and demanding
                 creative workloads. The RTX 4070 combines advanced ray tracing
                 with intelligent upscaling, bringing smooth, detailed visuals to
                 your display without demanding a massive power supply.
               </p>
               <h3 class="h5 mt-4">In the box</h3>
-              <ul class="muted">
+              <ul class="text-body-secondary">
                 <li>GeForce RTX 4070 graphics card</li>
                 <li>Quick start guide and support documentation</li>
                 <li>Power adapter (where required)</li>
@@ -145,14 +145,14 @@
             </div>
           </div>
           <section
-            class="content-card mt-5"
+            class="card p-4 mt-5"
             aria-labelledby="compatibility-heading"
           >
             <div class="eyebrow mb-2">CHECK THE EXACT MODEL BEFORE BUYING</div>
             <h2 class="h3" id="compatibility-heading">
               Compatibility guidance
             </h2>
-            <p class="muted">
+            <p class="text-body-secondary">
               These are general interface notes, not a compatibility check.
               Dimensions and connectors vary between card manufacturers.
             </p>
@@ -214,7 +214,7 @@
       <div class="col-md-6 col-lg-3">
         <a class="navbar-brand text-white" href="index.html"><span class="brand-mark">F</span><span>FORGE<span class="text-accent">.</span><span class="brand-caption">Gaming &amp; PC</span></span></a>
         <p class="small mt-3">PC hardware, gaming gear, and build inspiration.</p>
-        <p class="small muted mb-0">Lahore, Pakistan · Store details shown are placeholders.</p>
+        <p class="small text-body-secondary mb-0">Lahore, Pakistan · Store details shown are placeholders.</p>
       </div>
       <div class="col-6 col-lg-2">
         <h2>Shop</h2>

@@ -11,25 +11,25 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="site-nav">
-  <div class="container nav-wrap">
+    <nav class="site-nav sticky-top">
+  <div class="container d-flex align-items-center justify-content-between gap-3 py-2">
     <a class="navbar-brand" href="index.html" aria-label="Forge home">
       <span class="brand-mark">F</span>
       <span>FORGE<span class="text-accent">.</span><span class="brand-caption">Gaming &amp; PC</span></span>
     </a>
-    <div class="desktop-links" aria-label="Main navigation">
+    <div class="d-none d-lg-flex align-items-center gap-4" aria-label="Main navigation">
           <a class="site-link" href="index.html">Home</a>
           <a class="site-link" href="products.html">Shop</a>
           <a class="site-link site-link-builder" href="byo-pc.html">Build a PC</a>
           <a class="site-link" href="about.html">About</a>
           <a class="site-link" href="contact.html">Contact</a>
     </div>
-    <div class="nav-actions">
-      <a class="btn btn-quiet btn-sm" href="login.html">Account</a>
-      <a class="btn btn-accent btn-sm" href="cart.html">Cart</a>
+    <div class="d-none d-lg-flex align-items-center gap-2">
+      <a class="btn btn-outline-light btn-sm" href="login.html">Account</a>
+      <a class="btn btn-primary btn-sm" href="cart.html">Cart</a>
     </div>
-    <details class="mobile-menu">
-      <summary class="btn btn-quiet btn-sm"><span aria-hidden="true">☰</span> Menu</summary>
+    <details class="d-lg-none position-relative mobile-menu">
+      <summary class="btn btn-outline-light btn-sm"><span aria-hidden="true">☰</span> Menu</summary>
       <div class="mobile-menu-panel" aria-label="Mobile navigation">
             <a class="site-link" href="index.html">Home</a>
             <a class="site-link" href="products.html">Shop</a>
@@ -43,22 +43,22 @@
     </details>
   </div>
 </nav>
-    <main class="section-space">
+    <main class="py-5">
       <!-- Main content: customer details, payment options, and order summary. -->
       <div class="container">
         <div class="mb-4">
           <div class="eyebrow mb-2">CHECKOUT · PAKISTAN</div>
-          <h1 class="page-heading">Finish your build.</h1>
+          <h1 class="display-4 fw-bold">Finish your build.</h1>
           <div class="d-flex gap-3 mt-3">
-            <span class="checkout-step">01 Cart</span
-            ><span class="checkout-step current">02 Information & payment</span
-            ><span class="checkout-step">03 Confirmation</span>
+            <span class="small fw-bold text-body-secondary">01 Cart</span
+            ><span class="small fw-bold text-body-secondary current">02 Information & payment</span
+            ><span class="small fw-bold text-body-secondary">03 Confirmation</span>
           </div>
         </div>
         <form>
           <div class="row g-4">
             <div class="col-lg-7">
-              <div class="content-card mb-4">
+              <div class="card p-4 mb-4">
                 <div class="d-flex justify-content-between mb-4">
                   <h2 class="h5 mb-0">Contact information</h2>
                   <a class="small fw-bold" href="login.html">Log in</a>
@@ -86,7 +86,7 @@
                   >
                 </div>
               </div>
-              <div class="content-card mb-4">
+              <div class="card p-4 mb-4">
                 <h2 class="h5 mb-4">Shipping address</h2>
                 <div class="row g-3">
                   <div class="col-md-6">
@@ -189,9 +189,9 @@
                   </div>
                 </div>
               </div>
-              <div class="content-card">
+              <div class="card p-4">
                 <h2 class="h5 mb-1">Payment method</h2>
-                <p class="small muted mb-4">
+                <p class="small text-body-secondary mb-4">
                   Payment options are for display; no payment will be processed.
                 </p>
                 <div class="border rounded-3 p-3 mb-3">
@@ -207,7 +207,7 @@
                         >Credit or debit card</label
                       >
                     </div>
-                    <span class="small muted">Debit / credit card</span>
+                    <span class="small text-body-secondary">Debit / credit card</span>
                   </div>
                   <div class="row g-3 mt-1">
                     <div class="col-12">
@@ -268,7 +268,7 @@
                       >Bank transfer</label
                     >
                   </div>
-                  <div class="small muted ms-4">Example payment option</div>
+                  <div class="small text-body-secondary ms-4">Example payment option</div>
                 </div>
                 <div class="border rounded-3 p-3 mb-4">
                   <div class="form-check">
@@ -283,7 +283,7 @@
                       >Cash on delivery</label
                     >
                   </div>
-                  <div class="small muted ms-4">Example payment option</div>
+                  <div class="small text-body-secondary ms-4">Example payment option</div>
                 </div>
                 <div class="alert alert-warning small" role="note">
                   Do not enter real payment or personal information. No payment
@@ -292,7 +292,7 @@
               </div>
             </div>
             <div class="col-lg-5">
-              <div class="content-card">
+              <div class="card p-4">
                 <h2 class="h5 mb-4">Order summary</h2>
                 <div class="d-flex gap-3 align-items-center mb-3">
                   <img
@@ -304,7 +304,7 @@
                   />
                   <div class="flex-grow-1">
                     <div class="fw-bold small">GeForce RTX 4070 12GB</div>
-                    <div class="small muted">Qty 1</div>
+                    <div class="small text-body-secondary">Qty 1</div>
                   </div>
                   <span>Rs. 189,999</span>
                 </div>
@@ -318,20 +318,20 @@
                   />
                   <div class="flex-grow-1">
                     <div class="fw-bold small">Vengeance DDR5 32GB</div>
-                    <div class="small muted">Qty 2</div>
+                    <div class="small text-body-secondary">Qty 2</div>
                   </div>
                   <span>Rs. 69,998</span>
                 </div>
                 <hr />
                 <div class="d-flex justify-content-between mb-2">
-                  <span class="muted">Subtotal</span><span>Rs. 259,997</span>
+                  <span class="text-body-secondary">Subtotal</span><span>Rs. 259,997</span>
                 </div>
                 <div class="d-flex justify-content-between mb-2">
-                  <span class="muted">Shipping estimate</span
+                  <span class="text-body-secondary">Shipping estimate</span
                   ><span>Rs. 1,500</span>
                 </div>
                 <div class="d-flex justify-content-between mb-3">
-                  <span class="muted">Estimated tax</span
+                  <span class="text-body-secondary">Estimated tax</span
                   ><span>Rs. 20,800</span>
                 </div>
                 <hr />
@@ -339,12 +339,12 @@
                   class="d-flex justify-content-between align-items-center mb-4"
                 >
                   <strong>Total (PKR)</strong
-                  ><strong class="order-total">Rs. 282,297</strong>
+                  ><strong class="fw-bold fs-4">Rs. 282,297</strong>
                 </div>
-                <button class="btn btn-dark w-100" type="button">
+                <button class="btn btn-primary w-100" type="button">
                   Place order →
                 </button>
-                <p class="small muted text-center mt-3 mb-0">
+                <p class="small text-body-secondary text-center mt-3 mb-0">
                   Estimates are for display only. No order or payment will be
                   processed.
                 </p>
@@ -360,7 +360,7 @@
       <div class="col-md-6 col-lg-3">
         <a class="navbar-brand text-white" href="index.html"><span class="brand-mark">F</span><span>FORGE<span class="text-accent">.</span><span class="brand-caption">Gaming &amp; PC</span></span></a>
         <p class="small mt-3">PC hardware, gaming gear, and build inspiration.</p>
-        <p class="small muted mb-0">Lahore, Pakistan · Store details shown are placeholders.</p>
+        <p class="small text-body-secondary mb-0">Lahore, Pakistan · Store details shown are placeholders.</p>
       </div>
       <div class="col-6 col-lg-2">
         <h2>Shop</h2>
