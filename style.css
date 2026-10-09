@@ -377,6 +377,19 @@ a:hover {
   color: var(--accent-bright);
 }
 
+.compatibility-pair {
+  grid-template-columns: minmax(0, 1fr) 1.5rem minmax(0, 1fr);
+}
+
+.compatibility-pair > span:last-child {
+  text-align: end;
+}
+
+.compatibility-pair .compatibility-arrow {
+  justify-self: center;
+  color: var(--accent-bright);
+}
+
 .team-photo,
 .details-image {
   background: var(--surface-raised);
